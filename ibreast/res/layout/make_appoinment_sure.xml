@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/appoinment_linear_head"
+        style="@style/head_linearlayout"
+        android:background="#F8F8F8" >
+
+        <ImageView
+            android:id="@+id/appoinment_iv_back"
+            style="@style/returnback"
+            android:contentDescription="@string/appointment_title" />
+
+        <TextView
+            android:id="@+id/appoinment_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/appointment_title"
+            android:textColor="#5F5D5F"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/appoinment_rela_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appoinment_linear_head"
+        android:background="#DDDDDD" >
+
+        <TextView
+            android:id="@+id/appoinment_tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="@string/appoinment_recommend"
+            android:textColor="#595758" />
+
+        <TextView
+            android:id="@+id/appoinment_tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="@string/appoinment_sort"
+            android:textColor="#595758" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appoinment_rela_title"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/appoinment_item_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/appointment_title"
+            android:src="@drawable/default_pic" />
+
+        <TextView
+            android:id="@+id/appoinment_item_tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appoinment_item_pic"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/appoinment_item_pic"
+            android:text="@string/appoinment_hospital_name" />
+
+        <TextView
+            android:id="@+id/appoinment_item_tv_adress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/appoinment_item_pic"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/appoinment_item_pic"
+            android:text="@string/appoinment_hospital_level"
+            android:textColor="#DCDCDC"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/info_hospital"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/linear_adress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_cut_line"
+        android:background="#fff"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/hospital_tv_adress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:text="@string/adress" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/appointment_title"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_cut_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/linear_adress"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/linear_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_cut_line2"
+        android:background="#fff"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/hospital_tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"
+            android:text="@string/phone" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/appointment_title"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_cut_line3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/linear_phone"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rela_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_cut_line3"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/hospital_tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/introduce"
+            android:textColor="#C0C0C0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_cut_line4"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rela_introduce"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rela_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_cut_line4"
+        android:background="#fff" >
+
+        <TextView
+            android:id="@+id/hospital_tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:paddingTop="15dp"
+            android:text="@string/comment"
+            android:textColor="#C0C0C0" />
+
+        <TextView
+            android:id="@+id/hospital_tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/hospital_tv_comment"
+            android:text="@string/comment_num"
+            android:textColor="#C0C0C0" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_cut_line5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rela_comment"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rela_comment_bottom"
+        android:layout_below="@+id/linear_cut_line5"
+        android:background="#fff" >
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rela_comment_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/comment_btn_make"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/commend_btn_make"
+            android:padding="10dp"
+            android:text="@string/appoinment_make"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

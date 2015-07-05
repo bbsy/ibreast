@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/photowall"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rela_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#F0F0F0" >
+
+            <ImageView
+                android:id="@+id/iv_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/write" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/rela_top"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/tv_countdown"
+                android:layout_marginBottom="10dp"
+                android:text="@string/name" />
+
+            <TextView
+                android:id="@+id/tv_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="@string/countdown"
+                android:textColor="#D9D9D9"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/head_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+
+            <cn.buddycare.ibreast.mywidget.RoundImageView
+                android:id="@+id/img_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/default_pic" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cut_line_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/photowall"
+        android:layout_marginTop="50dp"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rela_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cut_line_1" >
+
+        <TextView
+            android:id="@+id/tv_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/mine_appoinment" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cut_line_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rela_appointment"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rela_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cut_line_2" >
+
+        <TextView
+            android:id="@+id/tv_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/mine_manager" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cut_line_3"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rela_manager"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/rela_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cut_line_3" >
+
+        <TextView
+            android:id="@+id/tv_about_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/mine_about_us" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cut_line_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rela_about_us"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" />
+    <RelativeLayout
+        android:id="@+id/rela_msg_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cut_line_4" >
+
+        <TextView
+            android:id="@+id/tv_msg_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingLeft="10dp"
+            android:text="@string/mine_msg_center" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cut_line_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/rela_msg_center"
+        android:background="#F9F9F9"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

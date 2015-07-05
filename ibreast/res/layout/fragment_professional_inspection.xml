@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8" >
+
+    <RelativeLayout
+        android:id="@+id/linear_head"
+        style="@style/head_linearlayout" >
+
+        <ImageView
+            android:id="@+id/inspection_iv_back"
+            style="@style/returnback"
+            android:contentDescription="@string/inspection_head" />
+
+        <TextView
+            android:id="@+id/inspection_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/inspection_head"
+            android:textColor="#5F5D5F"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_advice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_head"
+        android:layout_marginTop="10dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/advice_tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/inspection_advice_top"
+            android:textColor="#595758"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/advice_tv_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/advice_tv_top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:text="@string/inspection_advice_bottom"
+            android:textColor="#575556"
+            android:textSize="29sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/set_insperction_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela_advice" >
+
+        <Button
+            android:id="@+id/inspection_btn_set_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:background="@drawable/inspection_btn"
+            android:padding="13dp"
+            android:text="@string/inspection_data"
+            android:textColor="#5A595A"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/set_insperction_add_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_insperction_data"
+        android:layout_marginTop="25dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/insperction_time"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/inspection_head"
+            android:src="@drawable/timeclock" />
+
+        <TextView
+            android:id="@+id/inspection_btn_add_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/inspection_history"
+            android:textColor="#5A595A"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/insperction_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:contentDescription="@string/inspection_head"
+            android:src="@drawable/inspection_add" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/inspection_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inspection_want_com"
+        android:layout_below="@+id/set_insperction_add_data"
+        android:layout_marginTop="10dp"
+        android:background="#FFF" />
+
+    <RelativeLayout
+        android:id="@+id/inspection_want_com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="45dp" >
+
+        <Button
+            android:id="@+id/inspection_btn_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inspection_btn_com"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="@string/inspection_com"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</RelativeLayout>

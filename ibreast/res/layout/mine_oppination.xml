@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mine_appoinment_linear_head"
+        style="@style/head_linearlayout" 
+        android:background="#F8F8F8">
+
+        <ImageView
+            android:id="@+id/mine_appoinment_iv_back"
+            style="@style/returnback"
+            android:contentDescription="@string/appointment_title" />
+
+        <TextView
+            android:id="@+id/mine_appoinment_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mine_appoinment"
+            android:textColor="#5F5D5F"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mine_appoinment_rela_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mine_appoinment_linear_head"
+        android:background="#DDDDDD" >
+
+        <TextView
+            android:id="@+id/mine_appoinment_tv_recommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:padding="5dp"
+            android:text="@string/appoinment_hospital_name"
+            android:textColor="#595758" />
+
+        <TextView
+            android:id="@+id/mine_appoinment_tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:padding="5dp"
+            android:text="@string/appoinment_sort"
+            android:textColor="#595758" />
+    </RelativeLayout>
+
+    <ListView 
+        android:id="@+id/mine_oppination_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/mine_appoinment_rela_title"/>
+</RelativeLayout>

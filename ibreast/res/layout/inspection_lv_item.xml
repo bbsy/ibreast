@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rela"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/inspection_item_time"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:textColor="#D4D4D4"
+            android:lines="2"
+            android:text="@string/inspection_advice_bottom" />
+
+        <TextView
+            android:id="@+id/inspection_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/inspection_item_time"
+            android:text="@string/inspection_advice_category" />
+
+        <TextView
+            android:id="@+id/inspection_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inspection_category"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/inspection_item_time"
+            android:text="@string/inspection_advice_result"
+            android:textColor="#D4D4D4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/rela"
+        android:background="#F8F8F8" />
+
+</RelativeLayout>

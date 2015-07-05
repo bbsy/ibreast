@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rela_mine_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/mine_manager_item_tv_time"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:text="@string/inspection_advice_bottom" />
+
+        <TextView
+            android:id="@+id/mine_manager_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_manager_item_tv_time"
+            android:background="@drawable/disease_type"
+            android:text="@string/adress"
+            android:textColor="#FFF" />
+
+        <ImageView
+            android:id="@+id/mine_manager_item_iv_mimi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/mine_manager_item_tv_time"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/mine_manager_advice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/mine_manager_item_iv_mimi"
+            android:text="@string/inspection_advice" />
+
+        <TextView
+            android:id="@+id/mine_manager_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mine_manager_advice"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/mine_manager_item_iv_mimi"
+            android:text="@string/inspection_advice_result"
+            android:textColor="#D4D4D4" />
+    </RelativeLayout>
+
+</RelativeLayout>

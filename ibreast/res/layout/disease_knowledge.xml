@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/disease_linear_head"
+        style="@style/head_linearlayout" 
+        android:background="#F8F8F8">
+
+		<TextView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="10dp"
+		    android:layout_centerVertical="true"
+		    android:text="@string/disease_knowledge_sort"/>
+        <TextView
+            android:id="@+id/disease_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/disease_knowledge"
+            android:textColor="#5F5D5F"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_disease_knowledge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/disease_linear_head" />
+
+</RelativeLayout>

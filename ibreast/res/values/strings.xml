@@ -3,5 +3,41 @@
 
     <string name="app_name">Ibreast</string>
     <string name="action_settings">Settings</string>
-
+	<!-- 专业自检 -->
+    <string name="inspection_head">专业检查</string>
+    <string name="inspection_advice_top">基于你的预测报告我们建议您在这个日期完成检查</string>
+    <string name="inspection_advice_bottom">2015/6/30</string>
+    <string name="inspection_data">设置检查日程</string>
+    <string name="inspection_com">我要预约</string>
+    <string name="inspection_history">检查历史记录</string>
+    <string name="inspection_advice_category">医生/X射线/B超</string>
+    <string name="inspection_advice">建议</string>
+    <string name="inspection_advice_result">检查结果</string>
+	<!-- 我要预约 -->
+    <string name="appointment_title">我要预约</string>
+    <string name="appoinment_recommend">医院推荐</string>
+    <string name="appoinment_sort">默认排序</string>
+    <string name="appoinment_hospital_name">医院名称</string>
+    <string name="appoinment_hospital_adress">医院名称</string>
+    <string name="appoinment_hospital_level">医院级别</string>
+    <string name="appoinment_make">预约</string>
+    <string name="appoinment_evaluation">评价</string>
+    <string name="adress">地址</string>
+    <string name="phone">电话</string>
+    <string name="introduce">简介</string>
+    <string name="comment">评论</string>
+    <string name="comment_num">(12)</string>
+    <!-- 疾病知识 -->
+    <string name="disease_knowledge">疾病知识</string>
+    <string name="disease_knowledge_sort">排序</string>
+    <string name="disease_knowledge_classification">分类</string>
+    <string name="disease_knowledge_time">时间</string>
+    <string name="disease_knowledge_introduction">乳房结构生理知识介绍</string>
+    <!-- 我 -->
+    <string name="name">某某某</string>
+    <string name="countdown">距离下次检查还剩10天</string>
+    <string name="mine_appoinment">我的预约</string>
+    <string name="mine_manager">病例管理</string>
+    <string name="mine_about_us">关于我们</string>
+    <string name="mine_msg_center">消息中心</string>
 </resources>

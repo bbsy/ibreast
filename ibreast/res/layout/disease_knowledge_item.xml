@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/disease_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/disease_item_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:contentDescription="@string/appointment_title"
+            android:src="@drawable/default_pic" />
+
+        <TextView
+            android:id="@+id/disease_knowledge_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/disease_item_pic"
+            android:text="@string/disease_knowledge_classification"
+            android:textColor="#DBDBDB"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/disease_item_tv_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/disease_knowledge_sort"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/disease_item_pic"
+            android:text="@string/disease_knowledge_introduction" />
+
+        <TextView
+            android:id="@+id/disease_item_tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/disease_item_pic"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/disease_item_pic"
+            android:text="@string/disease_knowledge_time"
+            android:textColor="#DCDCDC"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/cut_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/disease_head"
+        android:layout_marginTop="2dp"
+        android:background="#F8F8F8"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

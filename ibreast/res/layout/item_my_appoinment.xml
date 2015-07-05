@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/my_appoinment_item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/appointment_title"
+        android:src="@drawable/default_pic" />
+
+    <TextView
+        android:id="@+id/my_appoinment_item_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/my_appoinment_item_pic"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/my_appoinment_btn_recommend"
+        android:layout_toRightOf="@+id/my_appoinment_item_pic"
+        android:text="@string/appoinment_hospital_name" />
+
+    <TextView
+        android:id="@+id/my_appoinment_item_tv_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_appoinment_item_pic"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/my_appoinment_btn_recommend"
+        android:layout_toRightOf="@+id/my_appoinment_item_pic"
+        android:text="@string/appoinment_hospital_adress"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/my_appoinment_btn_recommend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/appoinment_btn_make"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:textSize="14sp"
+        android:text="@string/appoinment_evaluation"
+        android:textColor="#000" />
+
+</RelativeLayout>
