@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pick">#ffb8bd</color>
+    <color name="pick_light">#ffb7c1</color>
+    <color name="pick_middle">#f36e83</color>
+    <color name="pick_dark">#f5243a</color>
+
+</resources>

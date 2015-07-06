@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include 
+        android:id="@+id/include_titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/simple_titlebar"
+        />
+    
+    <cn.bubbycare.ibreast.view.ChestView
+        android:id="@+id/view_chestview"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@id/include_titlebar_layout"
+        android:background="@color/pick" />
+
+    <RelativeLayout
+        android:id="@+id/view_action_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_chestview"
+        android:background="@color/pick"
+        android:padding="@dimen/view_rb_padding"
+        >
+
+        <ImageButton
+            android:id="@+id/view_imgbtn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/view_rb_margin_bottom"
+            android:layout_marginLeft="@dimen/view_normal_margin_lr"
+            android:background="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/view_imgbtn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/view_rb_margin_bottom"
+            android:layout_marginRight="@dimen/view_normal_margin_lr"
+            android:background="@drawable/delect" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/view_sb_selectnum_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_action_button_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/custom_number_select_view_seekbar_margin_top"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/string_hard_tile_size"
+            android:textColor="@android:color/black" />
+
+        <SeekBar
+            android:id="@+id/view_sb_selectnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:maxHeight="@dimen/custom_number_select_view_seekbar_min_max_height"
+            android:minHeight="@dimen/custom_number_select_view_seekbar_min_max_height"
+            android:minWidth="@dimen/custom_number_select_view_seekbarlayout_min_width"
+            android:paddingLeft="@dimen/custom_number_select_view_seekbar_padding"
+            android:paddingRight="@dimen/custom_number_select_view_seekbar_padding"
+            android:progress="30"
+            android:progressDrawable="@drawable/shly_po_seekbar"
+            android:thumb="@drawable/shly_seekbar_thumb" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/view_rg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_sb_selectnum_layout"
+        android:layout_marginTop="@dimen/view_rb_margin_top"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_radiogroup_padding_lr"
+        android:paddingRight="@dimen/view_radiogroup_padding_lr" >
+
+        <RadioButton
+            android:id="@+id/view_rb_soft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/view_rb_padding"
+            android:background="@color/pick_light"
+            android:layout_margin="@dimen/view_rb_margin"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/string_soft" />
+
+        <RadioButton
+            android:id="@+id/view_rb_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/view_rb_padding"
+            android:background="@color/pick_middle"
+            android:layout_margin="@dimen/view_rb_margin"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:text="@string/string_middle" />
+
+        <RadioButton
+            android:id="@+id/view_rb_hard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/pick_dark"
+            android:button="@null"
+            android:layout_margin="@dimen/view_rb_margin"
+            android:padding="@dimen/view_rb_padding"
+            android:gravity="center_horizontal"
+            android:text="@string/string_hard" />
+    </RadioGroup>
+
+</RelativeLayout>

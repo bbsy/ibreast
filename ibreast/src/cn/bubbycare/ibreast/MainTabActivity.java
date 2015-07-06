@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
+import cn.bubbycare.ibreast.activity.ChestActivity;
 import cn.bubbycare.ibreast.activity.MainActivity;
 import cn.bubbycare.ibreast.fragment.FragmentPage1;
 import cn.bubbycare.ibreast.fragment.FragmentPage2;
@@ -38,7 +39,7 @@ public class MainTabActivity extends FragmentActivity {
         setContentView(R.layout.main_tab_layout);
         initValue();
         initView();
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, ChestActivity.class);
         startActivity(intent);
     }
     

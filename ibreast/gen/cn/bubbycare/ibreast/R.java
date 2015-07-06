@@ -49,6 +49,15 @@ public final class R {
         public static final int tab_item_text=0x7f0a001a;
     }
     public static final class attr {
+        /**  Defines panel animation duration in ms. 
+         <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int animationDuration=0x7f010002;
         /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
 in (inches), mm (millimeters).
@@ -59,6 +68,73 @@ theme attribute (in the form
 containing a value of this type.
          */
         public static final int borderRadius=0x7f010000;
+        /**  Defines closed handle (drawable/color). 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int closedHandle=0x7f010006;
+        /**  Defines if flying gesture forces linear interpolator in animation. 
+         <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int linearFlying=0x7f010004;
+        /**  Defines opened handle (drawable/color). 
+         <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+         */
+        public static final int openedHandle=0x7f010005;
+        /**  Defines panel position on the screen. 
+         <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0</td><td> Panel placed at top of the screen. </td></tr>
+<tr><td><code>bottom</code></td><td>1</td><td> Panel placed at bottom of the screen. </td></tr>
+<tr><td><code>left</code></td><td>2</td><td> Panel placed at left of the screen. </td></tr>
+<tr><td><code>right</code></td><td>3</td><td> Panel placed at right of the screen. </td></tr>
+</table>
+         */
+        public static final int position=0x7f010003;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int transitionDrawable=0x7f010007;
+        /** <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int transitionDrawableLength=0x7f010008;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int transitionTextColorDown=0x7f01000a;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int transitionTextColorUp=0x7f010009;
         /** <p>Must be one of the following constant values.</p>
 <table>
 <colgroup align="left" />
@@ -74,6 +150,10 @@ containing a value of this type.
     public static final class color {
         public static final int com_sina_weibo_sdk_blue=0x7f090000;
         public static final int com_sina_weibo_sdk_loginview_text_color=0x7f090001;
+        public static final int pick=0x7f09000b;
+        public static final int pick_dark=0x7f09000e;
+        public static final int pick_light=0x7f09000c;
+        public static final int pick_middle=0x7f09000d;
         public static final int smssdk_black=0x7f090009;
         public static final int smssdk_gray=0x7f09000a;
         public static final int smssdk_gray_press=0x7f090003;
@@ -103,7 +183,7 @@ containing a value of this type.
         public static final int activity_main_button_margin_top=0x7f060010;
         public static final int activity_main_thirt_login_size=0x7f060011;
         public static final int activity_margin_padding_lr=0x7f060014;
-        public static final int activity_register_button_margin_top=0x7f060016;
+        public static final int activity_register_button_margin_top=0x7f060018;
         public static final int activity_size_sero=0x7f060009;
         public static final int activity_textview_size=0x7f060015;
         public static final int activity_titlebar_height=0x7f060013;
@@ -116,357 +196,427 @@ containing a value of this type.
         public static final int com_sina_weibo_sdk_loginview_padding_right=0x7f060005;
         public static final int com_sina_weibo_sdk_loginview_padding_top=0x7f060006;
         public static final int com_sina_weibo_sdk_loginview_text_size=0x7f060002;
+        public static final int custom_number_select_view_seekbar_margin_top=0x7f06001d;
+        public static final int custom_number_select_view_seekbar_min_max_height=0x7f06001b;
+        public static final int custom_number_select_view_seekbar_min_width=0x7f06001a;
+        public static final int custom_number_select_view_seekbar_padding=0x7f06001c;
+        public static final int custom_number_select_view_seekbarlayout_min_width=0x7f060019;
+        public static final int include_tv_title_size=0x7f060016;
+        public static final int view_normal_margin_lr=0x7f060017;
+        public static final int view_radiogroup_padding_lr=0x7f06001e;
+        public static final int view_rb_margin=0x7f060021;
+        public static final int view_rb_margin_bottom=0x7f060022;
+        public static final int view_rb_margin_top=0x7f06001f;
+        public static final int view_rb_padding=0x7f060020;
     }
     public static final class drawable {
-        public static final int appoinment_btn_make=0x7f020000;
-        public static final int bg_edittext=0x7f020001;
-        public static final int bg_edittext_focused=0x7f020002;
-        public static final int bg_edittext_normal=0x7f020003;
-        public static final int button_bg_normal=0x7f020004;
-        public static final int button_bg_press=0x7f020005;
-        public static final int button_general_selector=0x7f020006;
-        public static final int cmp_progress_dialog_indeterminate=0x7f020007;
-        public static final int cmp_progress_dialog_toast_frame=0x7f020008;
-        public static final int cmp_progress_dialog_waiting=0x7f020009;
-        public static final int com_sina_weibo_sdk_button_blue=0x7f02000a;
-        public static final int com_sina_weibo_sdk_button_grey=0x7f02000b;
-        public static final int com_sina_weibo_sdk_login_button_with_account_text=0x7f02000c;
-        public static final int com_sina_weibo_sdk_login_button_with_frame_logo=0x7f02000d;
-        public static final int com_sina_weibo_sdk_login_button_with_original_logo=0x7f02000e;
-        public static final int commend_btn_make=0x7f02000f;
-        public static final int default_pic=0x7f020010;
-        public static final int disease_type=0x7f020011;
-        public static final int home_btn_bg=0x7f020012;
-        public static final int ic_com_sina_weibo_sdk_button_blue_focused=0x7f020013;
-        public static final int ic_com_sina_weibo_sdk_button_blue_normal=0x7f020014;
-        public static final int ic_com_sina_weibo_sdk_button_blue_pressed=0x7f020015;
-        public static final int ic_com_sina_weibo_sdk_button_grey_focused=0x7f020016;
-        public static final int ic_com_sina_weibo_sdk_button_grey_normal=0x7f020017;
-        public static final int ic_com_sina_weibo_sdk_button_grey_pressed=0x7f020018;
-        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused=0x7f020019;
-        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_normal=0x7f02001a;
-        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed=0x7f02001b;
-        public static final int ic_com_sina_weibo_sdk_login_with_account_text_focused=0x7f02001c;
-        public static final int ic_com_sina_weibo_sdk_login_with_account_text_normal=0x7f02001d;
-        public static final int ic_com_sina_weibo_sdk_login_with_account_text_pressed=0x7f02001e;
-        public static final int ic_com_sina_weibo_sdk_login_with_text=0x7f02001f;
-        public static final int ic_com_sina_weibo_sdk_logo=0x7f020020;
-        public static final int ic_launcher=0x7f020021;
-        public static final int icon_home_nor=0x7f020022;
-        public static final int icon_home_sel=0x7f020023;
-        public static final int icon_meassage_nor=0x7f020024;
-        public static final int icon_meassage_sel=0x7f020025;
-        public static final int icon_more_nor=0x7f020026;
-        public static final int icon_more_sel=0x7f020027;
-        public static final int icon_qq=0x7f020028;
-        public static final int icon_selfinfo_nor=0x7f020029;
-        public static final int icon_selfinfo_sel=0x7f02002a;
-        public static final int icon_square_nor=0x7f02002b;
-        public static final int icon_square_sel=0x7f02002c;
-        public static final int icon_weibo=0x7f02002d;
-        public static final int icon_weixin=0x7f02002e;
-        public static final int inspection_add=0x7f02002f;
-        public static final int inspection_btn=0x7f020030;
-        public static final int inspection_btn_com=0x7f020031;
-        public static final int maintab_toolbar_bg=0x7f020032;
-        public static final int messagescenter_notice=0x7f020033;
-        public static final int returnback=0x7f020034;
-        public static final int right=0x7f020035;
-        public static final int selector_tab_background=0x7f020036;
-        public static final int smssdk_back_arrow=0x7f020037;
-        public static final int smssdk_back_arrow2=0x7f020038;
-        public static final int smssdk_btn_disenable=0x7f020039;
-        public static final int smssdk_btn_enable=0x7f02003a;
-        public static final int smssdk_cl_divider=0x7f02003b;
-        public static final int smssdk_clear_search=0x7f02003c;
-        public static final int smssdk_corners_bg=0x7f02003d;
-        public static final int smssdk_corners_bg_nor=0x7f02003e;
-        public static final int smssdk_corners_bg_pre=0x7f02003f;
-        public static final int smssdk_country_bg_selector=0x7f020040;
-        public static final int smssdk_country_group_scroll_down=0x7f020041;
-        public static final int smssdk_country_group_scroll_up=0x7f020042;
-        public static final int smssdk_cp_default_avatar=0x7f020043;
-        public static final int smssdk_default_avatar=0x7f020044;
-        public static final int smssdk_dialog_back=0x7f020045;
-        public static final int smssdk_dialog_bg=0x7f020046;
-        public static final int smssdk_dialog_btn_back=0x7f020047;
-        public static final int smssdk_dialog_btn_nor=0x7f02005f;
-        public static final int smssdk_dialog_btn_pre=0x7f020060;
-        public static final int smssdk_edittext_bg_selector=0x7f020048;
-        public static final int smssdk_input_bg_focus=0x7f020049;
-        public static final int smssdk_input_bg_normal=0x7f02004a;
-        public static final int smssdk_input_bg_special_focus=0x7f02004b;
-        public static final int smssdk_input_bg_special_normal=0x7f02004c;
-        public static final int smssdk_search_icon=0x7f02004d;
-        public static final int smssdk_sharesdk_icon=0x7f02004e;
-        public static final int tab_home_btn=0x7f02004f;
-        public static final int tab_message_btn=0x7f020050;
-        public static final int tab_more_btn=0x7f020051;
-        public static final int tab_selfinfo_btn=0x7f020052;
-        public static final int tab_square_btn=0x7f020053;
-        public static final int timeclock=0x7f020054;
-        public static final int toast_error=0x7f020055;
-        public static final int toast_info=0x7f020056;
-        public static final int toast_load=0x7f020057;
-        public static final int toast_success=0x7f020058;
-        public static final int toast_warn=0x7f020059;
-        public static final int write=0x7f02005a;
-        public static final int xianjian01=0x7f02005b;
-        public static final int xianjian02=0x7f02005c;
-        public static final int xianjian03=0x7f02005d;
-        public static final int xianjian04=0x7f02005e;
+        public static final int add=0x7f020000;
+        public static final int appoinment_btn_make=0x7f020001;
+        public static final int bg=0x7f020002;
+        public static final int bg_edittext=0x7f020003;
+        public static final int bg_edittext_focused=0x7f020004;
+        public static final int bg_edittext_normal=0x7f020005;
+        public static final int button_bg_normal=0x7f020006;
+        public static final int button_bg_press=0x7f020007;
+        public static final int button_general_selector=0x7f020008;
+        public static final int cmp_progress_dialog_indeterminate=0x7f020009;
+        public static final int cmp_progress_dialog_toast_frame=0x7f02000a;
+        public static final int cmp_progress_dialog_waiting=0x7f02000b;
+        public static final int com_sina_weibo_sdk_button_blue=0x7f02000c;
+        public static final int com_sina_weibo_sdk_button_grey=0x7f02000d;
+        public static final int com_sina_weibo_sdk_login_button_with_account_text=0x7f02000e;
+        public static final int com_sina_weibo_sdk_login_button_with_frame_logo=0x7f02000f;
+        public static final int com_sina_weibo_sdk_login_button_with_original_logo=0x7f020010;
+        public static final int commend_btn_make=0x7f020011;
+        public static final int default_pic=0x7f020012;
+        public static final int delect=0x7f020013;
+        public static final int disease_type=0x7f020014;
+        public static final int home_btn_bg=0x7f020015;
+        public static final int ic_com_sina_weibo_sdk_button_blue_focused=0x7f020016;
+        public static final int ic_com_sina_weibo_sdk_button_blue_normal=0x7f020017;
+        public static final int ic_com_sina_weibo_sdk_button_blue_pressed=0x7f020018;
+        public static final int ic_com_sina_weibo_sdk_button_grey_focused=0x7f020019;
+        public static final int ic_com_sina_weibo_sdk_button_grey_normal=0x7f02001a;
+        public static final int ic_com_sina_weibo_sdk_button_grey_pressed=0x7f02001b;
+        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_focused=0x7f02001c;
+        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_normal=0x7f02001d;
+        public static final int ic_com_sina_weibo_sdk_login_button_with_frame_logo_pressed=0x7f02001e;
+        public static final int ic_com_sina_weibo_sdk_login_with_account_text_focused=0x7f02001f;
+        public static final int ic_com_sina_weibo_sdk_login_with_account_text_normal=0x7f020020;
+        public static final int ic_com_sina_weibo_sdk_login_with_account_text_pressed=0x7f020021;
+        public static final int ic_com_sina_weibo_sdk_login_with_text=0x7f020022;
+        public static final int ic_com_sina_weibo_sdk_logo=0x7f020023;
+        public static final int ic_launcher=0x7f020024;
+        public static final int icon_hard_big=0x7f020025;
+        public static final int icon_hard_middle=0x7f020026;
+        public static final int icon_hard_small=0x7f020027;
+        public static final int icon_home_nor=0x7f020028;
+        public static final int icon_home_sel=0x7f020029;
+        public static final int icon_meassage_nor=0x7f02002a;
+        public static final int icon_meassage_sel=0x7f02002b;
+        public static final int icon_middle_big=0x7f02002c;
+        public static final int icon_middle_middle=0x7f02002d;
+        public static final int icon_middle_small=0x7f02002e;
+        public static final int icon_more_nor=0x7f02002f;
+        public static final int icon_more_sel=0x7f020030;
+        public static final int icon_qq=0x7f020031;
+        public static final int icon_selfinfo_nor=0x7f020032;
+        public static final int icon_selfinfo_sel=0x7f020033;
+        public static final int icon_soft_big=0x7f020034;
+        public static final int icon_soft_middle=0x7f020035;
+        public static final int icon_soft_small=0x7f020036;
+        public static final int icon_square_nor=0x7f020037;
+        public static final int icon_square_sel=0x7f020038;
+        public static final int icon_weibo=0x7f020039;
+        public static final int icon_weixin=0x7f02003a;
+        public static final int inspection_add=0x7f02003b;
+        public static final int inspection_btn=0x7f02003c;
+        public static final int inspection_btn_com=0x7f02003d;
+        public static final int item_bkg=0x7f02003e;
+        public static final int maintab_toolbar_bg=0x7f02003f;
+        public static final int messagescenter_notice=0x7f020040;
+        public static final int mm=0x7f020041;
+        public static final int returnback=0x7f020042;
+        public static final int right=0x7f020043;
+        public static final int selector_tab_background=0x7f020044;
+        public static final int shly_po_seekbar=0x7f020045;
+        public static final int shly_seekbar_thumb=0x7f020046;
+        public static final int shly_seekbar_thumb_normal=0x7f020047;
+        public static final int sliding_drawer_handle_bottom=0x7f020048;
+        public static final int smssdk_back_arrow=0x7f020049;
+        public static final int smssdk_back_arrow2=0x7f02004a;
+        public static final int smssdk_btn_disenable=0x7f02004b;
+        public static final int smssdk_btn_enable=0x7f02004c;
+        public static final int smssdk_cl_divider=0x7f02004d;
+        public static final int smssdk_clear_search=0x7f02004e;
+        public static final int smssdk_corners_bg=0x7f02004f;
+        public static final int smssdk_corners_bg_nor=0x7f020050;
+        public static final int smssdk_corners_bg_pre=0x7f020051;
+        public static final int smssdk_country_bg_selector=0x7f020052;
+        public static final int smssdk_country_group_scroll_down=0x7f020053;
+        public static final int smssdk_country_group_scroll_up=0x7f020054;
+        public static final int smssdk_cp_default_avatar=0x7f020055;
+        public static final int smssdk_default_avatar=0x7f020056;
+        public static final int smssdk_dialog_back=0x7f020057;
+        public static final int smssdk_dialog_bg=0x7f020058;
+        public static final int smssdk_dialog_btn_back=0x7f020059;
+        public static final int smssdk_dialog_btn_nor=0x7f020071;
+        public static final int smssdk_dialog_btn_pre=0x7f020072;
+        public static final int smssdk_edittext_bg_selector=0x7f02005a;
+        public static final int smssdk_input_bg_focus=0x7f02005b;
+        public static final int smssdk_input_bg_normal=0x7f02005c;
+        public static final int smssdk_input_bg_special_focus=0x7f02005d;
+        public static final int smssdk_input_bg_special_normal=0x7f02005e;
+        public static final int smssdk_search_icon=0x7f02005f;
+        public static final int smssdk_sharesdk_icon=0x7f020060;
+        public static final int tab_home_btn=0x7f020061;
+        public static final int tab_message_btn=0x7f020062;
+        public static final int tab_more_btn=0x7f020063;
+        public static final int tab_selfinfo_btn=0x7f020064;
+        public static final int tab_square_btn=0x7f020065;
+        public static final int timeclock=0x7f020066;
+        public static final int toast_error=0x7f020067;
+        public static final int toast_info=0x7f020068;
+        public static final int toast_load=0x7f020069;
+        public static final int toast_success=0x7f02006a;
+        public static final int toast_warn=0x7f02006b;
+        public static final int write=0x7f02006c;
+        public static final int xianjian01=0x7f02006d;
+        public static final int xianjian02=0x7f02006e;
+        public static final int xianjian03=0x7f02006f;
+        public static final int xianjian04=0x7f020070;
     }
     public static final class id {
-        public static final int activity_main_bottom_bar=0x7f0b0005;
-        public static final int activity_main_btn_login=0x7f0b0004;
-        public static final int activity_main_btn_register=0x7f0b0003;
-        public static final int activity_main_login_qq=0x7f0b0007;
-        public static final int activity_main_login_wb=0x7f0b0008;
-        public static final int activity_main_login_wx=0x7f0b0006;
-        public static final int activity_main_tv_appname=0x7f0b0002;
-        public static final int activity_register_btn_register=0x7f0b0010;
-        public static final int activity_register_btn_verification=0x7f0b000c;
-        public static final int activity_register_et_phone_input=0x7f0b000b;
-        public static final int activity_register_et_pwd=0x7f0b000e;
-        public static final int activity_register_et_pwd_confirm=0x7f0b000f;
-        public static final int activity_register_et_verificationnumber=0x7f0b000d;
-        public static final int activity_register_tv_phone_pre=0x7f0b000a;
-        public static final int advice_tv_bottom=0x7f0b002a;
-        public static final int advice_tv_top=0x7f0b0029;
-        public static final int appoinment_btn_recommend=0x7f0b003a;
-        public static final int appoinment_item_pic=0x7f0b0038;
-        public static final int appoinment_item_tv_adress=0x7f0b003b;
-        public static final int appoinment_item_tv_name=0x7f0b0039;
-        public static final int appoinment_iv_back=0x7f0b001f;
-        public static final int appoinment_linear_head=0x7f0b001e;
-        public static final int appoinment_lv=0x7f0b0024;
-        public static final int appoinment_rela_title=0x7f0b0021;
-        public static final int appoinment_tv_recommend=0x7f0b0022;
-        public static final int appoinment_tv_sort=0x7f0b0023;
-        public static final int appoinment_tv_title=0x7f0b0020;
-        public static final int btn_add=0x7f0b0085;
-        public static final int btn_dialog_cancel=0x7f0b007b;
-        public static final int btn_dialog_ok=0x7f0b007a;
-        public static final int btn_invite=0x7f0b0080;
-        public static final int btn_next=0x7f0b0093;
-        public static final int btn_sounds=0x7f0b008b;
-        public static final int btn_submit=0x7f0b008d;
+        public static final int activity_main_bottom_bar=0x7f0b001e;
+        public static final int activity_main_btn_login=0x7f0b001d;
+        public static final int activity_main_btn_register=0x7f0b001c;
+        public static final int activity_main_login_qq=0x7f0b0020;
+        public static final int activity_main_login_wb=0x7f0b0021;
+        public static final int activity_main_login_wx=0x7f0b001f;
+        public static final int activity_main_tv_appname=0x7f0b001b;
+        public static final int activity_register_btn_register=0x7f0b0029;
+        public static final int activity_register_btn_verification=0x7f0b0025;
+        public static final int activity_register_et_phone_input=0x7f0b0024;
+        public static final int activity_register_et_pwd=0x7f0b0027;
+        public static final int activity_register_et_pwd_confirm=0x7f0b0028;
+        public static final int activity_register_et_verificationnumber=0x7f0b0026;
+        public static final int activity_register_tv_phone_pre=0x7f0b0023;
+        public static final int advice_tv_bottom=0x7f0b0043;
+        public static final int advice_tv_top=0x7f0b0042;
+        public static final int appoinment_btn_recommend=0x7f0b0057;
+        public static final int appoinment_item_pic=0x7f0b0055;
+        public static final int appoinment_item_tv_adress=0x7f0b0058;
+        public static final int appoinment_item_tv_name=0x7f0b0056;
+        public static final int appoinment_iv_back=0x7f0b0038;
+        public static final int appoinment_linear_head=0x7f0b0037;
+        public static final int appoinment_lv=0x7f0b003d;
+        public static final int appoinment_rela_title=0x7f0b003a;
+        public static final int appoinment_tv_recommend=0x7f0b003b;
+        public static final int appoinment_tv_sort=0x7f0b003c;
+        public static final int appoinment_tv_title=0x7f0b0039;
+        public static final int bottom=0x7f0b0003;
+        public static final int btn_add=0x7f0b00a5;
+        public static final int btn_dialog_cancel=0x7f0b009b;
+        public static final int btn_dialog_ok=0x7f0b009a;
+        public static final int btn_invite=0x7f0b00a0;
+        public static final int btn_next=0x7f0b00b3;
+        public static final int btn_sounds=0x7f0b00ab;
+        public static final int btn_submit=0x7f0b00ad;
         public static final int circle=0x7f0b0000;
-        public static final int clContact=0x7f0b0081;
-        public static final int clCountry=0x7f0b0086;
-        public static final int comment_btn_make=0x7f0b0052;
-        public static final int cut_line=0x7f0b001c;
-        public static final int cut_line_1=0x7f0b005b;
-        public static final int cut_line_2=0x7f0b005e;
-        public static final int cut_line_3=0x7f0b0061;
-        public static final int cut_line_4=0x7f0b0064;
-        public static final int cut_line_5=0x7f0b0067;
-        public static final int disease_head=0x7f0b0017;
-        public static final int disease_item_pic=0x7f0b0018;
-        public static final int disease_item_tv_introduction=0x7f0b001a;
-        public static final int disease_item_tv_time=0x7f0b001b;
-        public static final int disease_knowledge_sort=0x7f0b0019;
-        public static final int disease_linear_head=0x7f0b0014;
-        public static final int disease_tv_title=0x7f0b0015;
-        public static final int et_put_identify=0x7f0b0089;
-        public static final int et_write_phone=0x7f0b0092;
-        public static final int head_pic=0x7f0b0059;
-        public static final int hospital_tv_adress=0x7f0b0044;
-        public static final int hospital_tv_comment=0x7f0b004d;
-        public static final int hospital_tv_comment_num=0x7f0b004e;
-        public static final int hospital_tv_introduce=0x7f0b004a;
-        public static final int hospital_tv_phone=0x7f0b0047;
-        public static final int imageview=0x7f0b001d;
-        public static final int img_head=0x7f0b005a;
-        public static final int include_view_btnLeft=0x7f0b009a;
-        public static final int include_view_btnRight=0x7f0b009c;
-        public static final int include_view_titlebar_text=0x7f0b009b;
-        public static final int info_hospital=0x7f0b0041;
-        public static final int inspection_btn_add_data=0x7f0b002f;
-        public static final int inspection_btn_com=0x7f0b0033;
-        public static final int inspection_btn_set_data=0x7f0b002c;
-        public static final int inspection_category=0x7f0b0036;
-        public static final int inspection_item_time=0x7f0b0035;
-        public static final int inspection_iv_back=0x7f0b0026;
-        public static final int inspection_lv=0x7f0b0031;
-        public static final int inspection_result=0x7f0b0037;
-        public static final int inspection_tv_title=0x7f0b0027;
-        public static final int inspection_want_com=0x7f0b0032;
-        public static final int insperction_add=0x7f0b0030;
-        public static final int insperction_time=0x7f0b002e;
-        public static final int ivSearch=0x7f0b0096;
-        public static final int iv_clear=0x7f0b008a;
-        public static final int iv_contact=0x7f0b0083;
-        public static final int iv_contact_icon=0x7f0b007c;
-        public static final int iv_write=0x7f0b0055;
-        public static final int linear_adress=0x7f0b0043;
-        public static final int linear_cut_line=0x7f0b0042;
-        public static final int linear_cut_line2=0x7f0b0045;
-        public static final int linear_cut_line3=0x7f0b0048;
-        public static final int linear_cut_line4=0x7f0b004b;
-        public static final int linear_cut_line5=0x7f0b004f;
-        public static final int linear_head=0x7f0b0025;
-        public static final int linear_phone=0x7f0b0046;
-        public static final int llSearch=0x7f0b0097;
-        public static final int llTitle=0x7f0b0095;
-        public static final int ll_back=0x7f0b0094;
-        public static final int lv_disease_knowledge=0x7f0b0016;
-        public static final int mine_appoinment_iv_back=0x7f0b0073;
-        public static final int mine_appoinment_linear_head=0x7f0b0072;
-        public static final int mine_appoinment_rela_title=0x7f0b0075;
-        public static final int mine_appoinment_tv_recommend=0x7f0b0076;
-        public static final int mine_appoinment_tv_sort=0x7f0b0077;
-        public static final int mine_appoinment_tv_title=0x7f0b0074;
-        public static final int mine_manager_advice=0x7f0b0070;
-        public static final int mine_manager_item=0x7f0b006e;
-        public static final int mine_manager_item_iv_mimi=0x7f0b006f;
-        public static final int mine_manager_item_tv_time=0x7f0b006d;
-        public static final int mine_manager_iv_back=0x7f0b0069;
-        public static final int mine_manager_linear_head=0x7f0b0068;
-        public static final int mine_manager_lv=0x7f0b006b;
-        public static final int mine_manager_result=0x7f0b0071;
-        public static final int mine_manager_tv_title=0x7f0b006a;
-        public static final int mine_oppination_lv=0x7f0b0078;
-        public static final int my_appoinment_btn_recommend=0x7f0b003e;
-        public static final int my_appoinment_item_pic=0x7f0b003c;
-        public static final int my_appoinment_item_tv_adress=0x7f0b003f;
-        public static final int my_appoinment_item_tv_name=0x7f0b003d;
-        public static final int photowall=0x7f0b0053;
-        public static final int realtabcontent=0x7f0b0040;
-        public static final int rela=0x7f0b0034;
-        public static final int rela_about_us=0x7f0b0062;
-        public static final int rela_advice=0x7f0b0028;
-        public static final int rela_appointment=0x7f0b005c;
-        public static final int rela_bottom=0x7f0b0056;
-        public static final int rela_comment=0x7f0b004c;
-        public static final int rela_comment_bottom=0x7f0b0051;
-        public static final int rela_introduce=0x7f0b0049;
-        public static final int rela_manager=0x7f0b005f;
-        public static final int rela_mine_manager=0x7f0b006c;
-        public static final int rela_msg_center=0x7f0b0065;
-        public static final int rela_top=0x7f0b0054;
-        public static final int rl_country=0x7f0b008f;
-        public static final int rl_lv_item_bg=0x7f0b0082;
+        public static final int clContact=0x7f0b00a1;
+        public static final int clCountry=0x7f0b00a6;
+        public static final int comment_btn_make=0x7f0b006f;
+        public static final int cut_line=0x7f0b0035;
+        public static final int cut_line_1=0x7f0b0078;
+        public static final int cut_line_2=0x7f0b007b;
+        public static final int cut_line_3=0x7f0b007e;
+        public static final int cut_line_4=0x7f0b0081;
+        public static final int cut_line_5=0x7f0b0084;
+        public static final int disease_head=0x7f0b0030;
+        public static final int disease_item_pic=0x7f0b0031;
+        public static final int disease_item_tv_introduction=0x7f0b0033;
+        public static final int disease_item_tv_time=0x7f0b0034;
+        public static final int disease_knowledge_sort=0x7f0b0032;
+        public static final int disease_linear_head=0x7f0b002d;
+        public static final int disease_tv_title=0x7f0b002e;
+        public static final int et_put_identify=0x7f0b00a9;
+        public static final int et_write_phone=0x7f0b00b2;
+        public static final int head_pic=0x7f0b0076;
+        public static final int hospital_tv_adress=0x7f0b0061;
+        public static final int hospital_tv_comment=0x7f0b006a;
+        public static final int hospital_tv_comment_num=0x7f0b006b;
+        public static final int hospital_tv_introduce=0x7f0b0067;
+        public static final int hospital_tv_phone=0x7f0b0064;
+        public static final int imageview=0x7f0b0036;
+        public static final int img_head=0x7f0b0077;
+        public static final int include_titlebar_layout=0x7f0b0008;
+        public static final int include_view_btnLeft=0x7f0b00ba;
+        public static final int include_view_btnRight=0x7f0b00bc;
+        public static final int include_view_titlebar_text=0x7f0b00bb;
+        public static final int info_hospital=0x7f0b005e;
+        public static final int inspection_btn_add_data=0x7f0b0048;
+        public static final int inspection_btn_com=0x7f0b004c;
+        public static final int inspection_btn_set_data=0x7f0b0045;
+        public static final int inspection_category=0x7f0b0053;
+        public static final int inspection_item_time=0x7f0b0052;
+        public static final int inspection_iv_back=0x7f0b003f;
+        public static final int inspection_lv=0x7f0b004a;
+        public static final int inspection_result=0x7f0b0054;
+        public static final int inspection_tv_title=0x7f0b0040;
+        public static final int inspection_want_com=0x7f0b004b;
+        public static final int insperction_add=0x7f0b0049;
+        public static final int insperction_time=0x7f0b0047;
+        public static final int item_date=0x7f0b004e;
+        public static final int item_image=0x7f0b0050;
+        public static final int item_layout=0x7f0b004d;
+        public static final int item_nongli_date=0x7f0b004f;
+        public static final int ivSearch=0x7f0b00b6;
+        public static final int iv_clear=0x7f0b00aa;
+        public static final int iv_contact=0x7f0b00a3;
+        public static final int iv_contact_icon=0x7f0b009c;
+        public static final int iv_write=0x7f0b0072;
+        public static final int left=0x7f0b0004;
+        public static final int linear_adress=0x7f0b0060;
+        public static final int linear_cut_line=0x7f0b005f;
+        public static final int linear_cut_line2=0x7f0b0062;
+        public static final int linear_cut_line3=0x7f0b0065;
+        public static final int linear_cut_line4=0x7f0b0068;
+        public static final int linear_cut_line5=0x7f0b006c;
+        public static final int linear_head=0x7f0b003e;
+        public static final int linear_phone=0x7f0b0063;
+        public static final int llSearch=0x7f0b00b7;
+        public static final int llTitle=0x7f0b00b5;
+        public static final int ll_back=0x7f0b00b4;
+        public static final int lv_disease_knowledge=0x7f0b002f;
+        public static final int main_frame=0x7f0b0018;
+        public static final int main_frame_shader=0x7f0b001a;
+        public static final int main_year_month=0x7f0b0016;
+        public static final int mine_appoinment_iv_back=0x7f0b0090;
+        public static final int mine_appoinment_linear_head=0x7f0b008f;
+        public static final int mine_appoinment_rela_title=0x7f0b0092;
+        public static final int mine_appoinment_tv_recommend=0x7f0b0093;
+        public static final int mine_appoinment_tv_sort=0x7f0b0094;
+        public static final int mine_appoinment_tv_title=0x7f0b0091;
+        public static final int mine_manager_advice=0x7f0b008d;
+        public static final int mine_manager_item=0x7f0b008b;
+        public static final int mine_manager_item_iv_mimi=0x7f0b008c;
+        public static final int mine_manager_item_tv_time=0x7f0b008a;
+        public static final int mine_manager_iv_back=0x7f0b0086;
+        public static final int mine_manager_linear_head=0x7f0b0085;
+        public static final int mine_manager_lv=0x7f0b0088;
+        public static final int mine_manager_result=0x7f0b008e;
+        public static final int mine_manager_tv_title=0x7f0b0087;
+        public static final int mine_oppination_lv=0x7f0b0095;
+        public static final int my_appoinment_btn_recommend=0x7f0b005b;
+        public static final int my_appoinment_item_pic=0x7f0b0059;
+        public static final int my_appoinment_item_tv_adress=0x7f0b005c;
+        public static final int my_appoinment_item_tv_name=0x7f0b005a;
+        public static final int panel=0x7f0b0014;
+        public static final int panelContent=0x7f0b0007;
+        public static final int panelHandle=0x7f0b0006;
+        public static final int photowall=0x7f0b0070;
+        public static final int realtabcontent=0x7f0b005d;
+        public static final int rela=0x7f0b0051;
+        public static final int rela_about_us=0x7f0b007f;
+        public static final int rela_advice=0x7f0b0041;
+        public static final int rela_appointment=0x7f0b0079;
+        public static final int rela_bottom=0x7f0b0073;
+        public static final int rela_comment=0x7f0b0069;
+        public static final int rela_comment_bottom=0x7f0b006e;
+        public static final int rela_introduce=0x7f0b0066;
+        public static final int rela_manager=0x7f0b007c;
+        public static final int rela_mine_manager=0x7f0b0089;
+        public static final int rela_msg_center=0x7f0b0082;
+        public static final int rela_top=0x7f0b0071;
+        public static final int right=0x7f0b0005;
+        public static final int rl_country=0x7f0b00af;
+        public static final int rl_lv_item_bg=0x7f0b00a2;
         public static final int round=0x7f0b0001;
-        public static final int scroll=0x7f0b0050;
-        public static final int set_insperction_add_data=0x7f0b002d;
-        public static final int set_insperction_data=0x7f0b002b;
-        public static final int textview=0x7f0b0099;
-        public static final int titlebar=0x7f0b0009;
-        public static final int toast_img=0x7f0b0012;
-        public static final int toast_layout_root=0x7f0b0011;
-        public static final int toast_txt=0x7f0b0013;
-        public static final int tv_about_us=0x7f0b0063;
-        public static final int tv_appointment=0x7f0b005d;
-        public static final int tv_contact=0x7f0b0084;
-        public static final int tv_contact_name=0x7f0b007d;
-        public static final int tv_contact_phones=0x7f0b007e;
-        public static final int tv_countdown=0x7f0b0058;
-        public static final int tv_country=0x7f0b0090;
-        public static final int tv_country_num=0x7f0b0091;
-        public static final int tv_dialog_hint=0x7f0b0079;
-        public static final int tv_dialog_title=0x7f0b0098;
-        public static final int tv_identify_notify=0x7f0b0087;
-        public static final int tv_invite_hint=0x7f0b007f;
-        public static final int tv_manager=0x7f0b0060;
-        public static final int tv_msg_center=0x7f0b0066;
-        public static final int tv_name=0x7f0b0057;
-        public static final int tv_phone=0x7f0b0088;
-        public static final int tv_title=0x7f0b008e;
-        public static final int tv_unreceive_identify=0x7f0b008c;
+        public static final int scroll=0x7f0b006d;
+        public static final int set_insperction_add_data=0x7f0b0046;
+        public static final int set_insperction_data=0x7f0b0044;
+        public static final int simple_titlebar_btn_back=0x7f0b0096;
+        public static final int simple_titlebar_btn_confirm=0x7f0b0098;
+        public static final int simple_titlebar_tv_title=0x7f0b0097;
+        public static final int textview=0x7f0b00b9;
+        public static final int title=0x7f0b0015;
+        public static final int titlebar=0x7f0b0022;
+        public static final int toast_img=0x7f0b002b;
+        public static final int toast_layout_root=0x7f0b002a;
+        public static final int toast_txt=0x7f0b002c;
+        public static final int top=0x7f0b0002;
+        public static final int tv=0x7f0b000e;
+        public static final int tv_about_us=0x7f0b0080;
+        public static final int tv_appointment=0x7f0b007a;
+        public static final int tv_contact=0x7f0b00a4;
+        public static final int tv_contact_name=0x7f0b009d;
+        public static final int tv_contact_phones=0x7f0b009e;
+        public static final int tv_countdown=0x7f0b0075;
+        public static final int tv_country=0x7f0b00b0;
+        public static final int tv_country_num=0x7f0b00b1;
+        public static final int tv_dialog_hint=0x7f0b0099;
+        public static final int tv_dialog_title=0x7f0b00b8;
+        public static final int tv_identify_notify=0x7f0b00a7;
+        public static final int tv_invite_hint=0x7f0b009f;
+        public static final int tv_manager=0x7f0b007d;
+        public static final int tv_msg_center=0x7f0b0083;
+        public static final int tv_name=0x7f0b0074;
+        public static final int tv_phone=0x7f0b00a8;
+        public static final int tv_title=0x7f0b00ae;
+        public static final int tv_unreceive_identify=0x7f0b00ac;
+        public static final int view_action_button_layout=0x7f0b000a;
+        public static final int view_chestview=0x7f0b0009;
+        public static final int view_imgbtn_add=0x7f0b000b;
+        public static final int view_imgbtn_delete=0x7f0b000c;
+        public static final int view_rb_hard=0x7f0b0013;
+        public static final int view_rb_middle=0x7f0b0012;
+        public static final int view_rb_soft=0x7f0b0011;
+        public static final int view_rg_layout=0x7f0b0010;
+        public static final int view_sb_selectnum=0x7f0b000f;
+        public static final int view_sb_selectnum_layout=0x7f0b000d;
+        public static final int viewpager=0x7f0b0019;
+        public static final int week=0x7f0b0017;
     }
     public static final class layout {
-        public static final int activity_main_layout=0x7f030000;
-        public static final int activity_register_layout=0x7f030001;
-        public static final int cmp_rich_toast=0x7f030002;
-        public static final int disease_knowledge=0x7f030003;
-        public static final int disease_knowledge_item=0x7f030004;
-        public static final int fragment_1=0x7f030005;
-        public static final int fragment_2=0x7f030006;
-        public static final int fragment_3=0x7f030007;
-        public static final int fragment_4=0x7f030008;
-        public static final int fragment_5=0x7f030009;
-        public static final int fragment_appointment=0x7f03000a;
-        public static final int fragment_professional_inspection=0x7f03000b;
-        public static final int inspection_lv_item=0x7f03000c;
-        public static final int item_appoinment_lv=0x7f03000d;
-        public static final int item_my_appoinment=0x7f03000e;
-        public static final int main_tab_layout=0x7f03000f;
-        public static final int make_appoinment_sure=0x7f030010;
-        public static final int mine=0x7f030011;
-        public static final int mine_manager=0x7f030012;
-        public static final int mine_manager_lv_item=0x7f030013;
-        public static final int mine_oppination=0x7f030014;
-        public static final int smssdk_back_verify_dialog=0x7f030015;
-        public static final int smssdk_contact_detail_page=0x7f030016;
-        public static final int smssdk_contact_list_page=0x7f030017;
-        public static final int smssdk_contacts_listview_item=0x7f030018;
-        public static final int smssdk_country_list_page=0x7f030019;
-        public static final int smssdk_input_identify_num_page=0x7f03001a;
-        public static final int smssdk_listview_title_layout=0x7f03001b;
-        public static final int smssdk_progress_dialog=0x7f03001c;
-        public static final int smssdk_regist_page=0x7f03001d;
-        public static final int smssdk_search_title_layout=0x7f03001e;
-        public static final int smssdk_send_msg_dialog=0x7f03001f;
-        public static final int smssdk_title_layout=0x7f030020;
-        public static final int tab_item_view=0x7f030021;
-        public static final int titlebar=0x7f030022;
+        public static final int activity_check_for_self=0x7f030000;
+        public static final int activity_checkremind=0x7f030001;
+        public static final int activity_main_layout=0x7f030002;
+        public static final int activity_register_layout=0x7f030003;
+        public static final int cmp_rich_toast=0x7f030004;
+        public static final int disease_knowledge=0x7f030005;
+        public static final int disease_knowledge_item=0x7f030006;
+        public static final int fragment_1=0x7f030007;
+        public static final int fragment_2=0x7f030008;
+        public static final int fragment_3=0x7f030009;
+        public static final int fragment_4=0x7f03000a;
+        public static final int fragment_5=0x7f03000b;
+        public static final int fragment_appointment=0x7f03000c;
+        public static final int fragment_professional_inspection=0x7f03000d;
+        public static final int gridview_item=0x7f03000e;
+        public static final int inspection_lv_item=0x7f03000f;
+        public static final int item_appoinment_lv=0x7f030010;
+        public static final int item_my_appoinment=0x7f030011;
+        public static final int main_tab_layout=0x7f030012;
+        public static final int make_appoinment_sure=0x7f030013;
+        public static final int mine=0x7f030014;
+        public static final int mine_manager=0x7f030015;
+        public static final int mine_manager_lv_item=0x7f030016;
+        public static final int mine_oppination=0x7f030017;
+        public static final int simple_titlebar=0x7f030018;
+        public static final int smssdk_back_verify_dialog=0x7f030019;
+        public static final int smssdk_contact_detail_page=0x7f03001a;
+        public static final int smssdk_contact_list_page=0x7f03001b;
+        public static final int smssdk_contacts_listview_item=0x7f03001c;
+        public static final int smssdk_country_list_page=0x7f03001d;
+        public static final int smssdk_input_identify_num_page=0x7f03001e;
+        public static final int smssdk_listview_title_layout=0x7f03001f;
+        public static final int smssdk_progress_dialog=0x7f030020;
+        public static final int smssdk_regist_page=0x7f030021;
+        public static final int smssdk_search_title_layout=0x7f030022;
+        public static final int smssdk_send_msg_dialog=0x7f030023;
+        public static final int smssdk_title_layout=0x7f030024;
+        public static final int tab_item_view=0x7f030025;
+        public static final int titlebar=0x7f030026;
     }
     public static final class raw {
         public static final int smssdk_pydb=0x7f050000;
     }
     public static final class string {
         public static final int action_settings=0x7f070051;
-        public static final int adress=0x7f070071;
+        public static final int add=0x7f07006f;
+        public static final int adress=0x7f070081;
         public static final int app_name=0x7f070050;
-        public static final int appoinment_evaluation=0x7f070070;
-        public static final int appoinment_hospital_adress=0x7f07006d;
-        public static final int appoinment_hospital_level=0x7f07006e;
-        public static final int appoinment_hospital_name=0x7f07006c;
-        public static final int appoinment_make=0x7f07006f;
-        public static final int appoinment_recommend=0x7f07006a;
-        public static final int appoinment_sort=0x7f07006b;
+        public static final int appoinment_evaluation=0x7f070080;
+        public static final int appoinment_hospital_adress=0x7f07007d;
+        public static final int appoinment_hospital_level=0x7f07007e;
+        public static final int appoinment_hospital_name=0x7f07007c;
+        public static final int appoinment_make=0x7f07007f;
+        public static final int appoinment_recommend=0x7f07007a;
+        public static final int appoinment_sort=0x7f07007b;
         /**  我要预约 
          */
-        public static final int appointment_title=0x7f070069;
+        public static final int appointment_title=0x7f070079;
         public static final int com_sina_weibo_sdk_login=0x7f070001;
         public static final int com_sina_weibo_sdk_login_with_weibo_account=0x7f070000;
         public static final int com_sina_weibo_sdk_logout=0x7f070002;
-        public static final int comment=0x7f070074;
-        public static final int comment_num=0x7f070075;
-        public static final int countdown=0x7f07007c;
+        public static final int comment=0x7f070084;
+        public static final int comment_num=0x7f070085;
+        public static final int countdown=0x7f07008c;
         /**  疾病知识 
          */
-        public static final int disease_knowledge=0x7f070076;
-        public static final int disease_knowledge_classification=0x7f070078;
-        public static final int disease_knowledge_introduction=0x7f07007a;
-        public static final int disease_knowledge_sort=0x7f070077;
-        public static final int disease_knowledge_time=0x7f070079;
+        public static final int disease_knowledge=0x7f070086;
+        public static final int disease_knowledge_classification=0x7f070088;
+        public static final int disease_knowledge_introduction=0x7f07008a;
+        public static final int disease_knowledge_sort=0x7f070087;
+        public static final int disease_knowledge_time=0x7f070089;
         public static final int frament_first=0x7f070052;
         public static final int frament_five=0x7f070056;
         public static final int frament_four=0x7f070055;
         public static final int frament_second=0x7f070053;
         public static final int frament_thirst=0x7f070054;
-        public static final int inspection_advice=0x7f070067;
-        public static final int inspection_advice_bottom=0x7f070062;
-        public static final int inspection_advice_category=0x7f070066;
-        public static final int inspection_advice_result=0x7f070068;
-        public static final int inspection_advice_top=0x7f070061;
-        public static final int inspection_com=0x7f070064;
-        public static final int inspection_data=0x7f070063;
+        public static final int friday=0x7f07006c;
+        public static final int inspection_advice=0x7f070077;
+        public static final int inspection_advice_bottom=0x7f070072;
+        public static final int inspection_advice_category=0x7f070076;
+        public static final int inspection_advice_result=0x7f070078;
+        public static final int inspection_advice_top=0x7f070071;
+        public static final int inspection_com=0x7f070074;
+        public static final int inspection_data=0x7f070073;
         /**  专业自检 
          */
-        public static final int inspection_head=0x7f070060;
-        public static final int inspection_history=0x7f070065;
-        public static final int introduce=0x7f070073;
-        public static final int mine_about_us=0x7f07007f;
-        public static final int mine_appoinment=0x7f07007d;
-        public static final int mine_manager=0x7f07007e;
-        public static final int mine_msg_center=0x7f070080;
+        public static final int inspection_head=0x7f070070;
+        public static final int inspection_history=0x7f070075;
+        public static final int introduce=0x7f070083;
+        public static final int mine_about_us=0x7f07008f;
+        public static final int mine_appoinment=0x7f07008d;
+        public static final int mine_manager=0x7f07008e;
+        public static final int mine_msg_center=0x7f070090;
+        public static final int monday=0x7f070068;
         /**  我 
          */
-        public static final int name=0x7f07007b;
-        public static final int phone=0x7f070072;
+        public static final int name=0x7f07008b;
+        public static final int phone=0x7f070082;
+        public static final int saturday=0x7f07006d;
         public static final int smssdk_add_contact=0x7f07004a;
         public static final int smssdk_back=0x7f070024;
         public static final int smssdk_cancel=0x7f07002a;
@@ -544,17 +694,31 @@ containing a value of this type.
         public static final int smssdk_write_mobile_phone=0x7f07002d;
         public static final int smssdk_write_right_mobile_phone=0x7f07002e;
         public static final int smssdk_your_ccount_is_verified=0x7f07003d;
-        public static final int string_get_phone_verification=0x7f07005b;
-        public static final int string_input_phonenumber=0x7f07005c;
-        public static final int string_input_pwd=0x7f07005e;
-        public static final int string_input_pwd_confirm=0x7f07005f;
-        public static final int string_input_verificationnumber=0x7f07005d;
+        public static final int string_back=0x7f070059;
+        public static final int string_confirm=0x7f07005a;
+        public static final int string_get_phone_verification=0x7f07005e;
+        public static final int string_hard=0x7f070064;
+        public static final int string_hard_tile_size=0x7f070065;
+        public static final int string_input_phonenumber=0x7f07005f;
+        public static final int string_input_pwd=0x7f070061;
+        public static final int string_input_pwd_confirm=0x7f070066;
+        public static final int string_input_verificationnumber=0x7f070060;
         public static final int string_login=0x7f070058;
-        public static final int string_phone_pre=0x7f07005a;
+        public static final int string_middle=0x7f070063;
+        public static final int string_phone_pre=0x7f07005d;
         /**  add by xushiyong 20150703 start 
          */
         public static final int string_register=0x7f070057;
-        public static final int string_thirder_login=0x7f070059;
+        public static final int string_soft=0x7f070062;
+        public static final int string_thirder_login=0x7f07005c;
+        public static final int string_title_for_test=0x7f07005b;
+        public static final int sunday=0x7f07006e;
+        public static final int thuesday=0x7f070069;
+        public static final int thursday=0x7f07006b;
+        /**  add by xushiyong 20150703 end 
+         */
+        public static final int title_activity_main=0x7f070067;
+        public static final int wednesday=0x7f07006a;
     }
     public static final class style {
         /** 
@@ -601,6 +765,109 @@ containing a value of this type.
         public static final int tab_item=0x7f080005;
     }
     public static final class styleable {
+        /** Attributes that can be used with a Panel.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #Panel_animationDuration cn.bubbycare.ibreast:animationDuration}</code></td><td> Defines panel animation duration in ms.</td></tr>
+           <tr><td><code>{@link #Panel_closedHandle cn.bubbycare.ibreast:closedHandle}</code></td><td> Defines closed handle (drawable/color).</td></tr>
+           <tr><td><code>{@link #Panel_linearFlying cn.bubbycare.ibreast:linearFlying}</code></td><td> Defines if flying gesture forces linear interpolator in animation.</td></tr>
+           <tr><td><code>{@link #Panel_openedHandle cn.bubbycare.ibreast:openedHandle}</code></td><td> Defines opened handle (drawable/color).</td></tr>
+           <tr><td><code>{@link #Panel_position cn.bubbycare.ibreast:position}</code></td><td> Defines panel position on the screen.</td></tr>
+           </table>
+           @see #Panel_animationDuration
+           @see #Panel_closedHandle
+           @see #Panel_linearFlying
+           @see #Panel_openedHandle
+           @see #Panel_position
+         */
+        public static final int[] Panel = {
+            0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005,
+            0x7f010006
+        };
+        /**
+          <p>
+          @attr description
+           Defines panel animation duration in ms. 
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:animationDuration
+        */
+        public static final int Panel_animationDuration = 0;
+        /**
+          <p>
+          @attr description
+           Defines closed handle (drawable/color). 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:closedHandle
+        */
+        public static final int Panel_closedHandle = 4;
+        /**
+          <p>
+          @attr description
+           Defines if flying gesture forces linear interpolator in animation. 
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          <p>This is a private symbol.
+          @attr name android:linearFlying
+        */
+        public static final int Panel_linearFlying = 2;
+        /**
+          <p>
+          @attr description
+           Defines opened handle (drawable/color). 
+
+
+          <p>May be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+<p>May be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+          <p>This is a private symbol.
+          @attr name android:openedHandle
+        */
+        public static final int Panel_openedHandle = 3;
+        /**
+          <p>
+          @attr description
+           Defines panel position on the screen. 
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>top</code></td><td>0</td><td> Panel placed at top of the screen. </td></tr>
+<tr><td><code>bottom</code></td><td>1</td><td> Panel placed at bottom of the screen. </td></tr>
+<tr><td><code>left</code></td><td>2</td><td> Panel placed at left of the screen. </td></tr>
+<tr><td><code>right</code></td><td>3</td><td> Panel placed at right of the screen. </td></tr>
+</table>
+          <p>This is a private symbol.
+          @attr name android:position
+        */
+        public static final int Panel_position = 1;
         /** Attributes that can be used with a RoundImageView.
            <p>Includes the following attributes:</p>
            <table>
@@ -649,5 +916,78 @@ containing a value of this type.
           @attr name android:type
         */
         public static final int RoundImageView_type = 1;
+        /** Attributes that can be used with a SmoothButton.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #SmoothButton_transitionDrawable cn.bubbycare.ibreast:transitionDrawable}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothButton_transitionDrawableLength cn.bubbycare.ibreast:transitionDrawableLength}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothButton_transitionTextColorDown cn.bubbycare.ibreast:transitionTextColorDown}</code></td><td></td></tr>
+           <tr><td><code>{@link #SmoothButton_transitionTextColorUp cn.bubbycare.ibreast:transitionTextColorUp}</code></td><td></td></tr>
+           </table>
+           @see #SmoothButton_transitionDrawable
+           @see #SmoothButton_transitionDrawableLength
+           @see #SmoothButton_transitionTextColorDown
+           @see #SmoothButton_transitionTextColorUp
+         */
+        public static final int[] SmoothButton = {
+            0x7f010007, 0x7f010008, 0x7f010009, 0x7f01000a
+        };
+        /**
+          <p>This symbol is the offset where the {@link cn.bubbycare.ibreast.R.attr#transitionDrawable}
+          attribute's value can be found in the {@link #SmoothButton} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:transitionDrawable
+        */
+        public static final int SmoothButton_transitionDrawable = 0;
+        /**
+          <p>This symbol is the offset where the {@link cn.bubbycare.ibreast.R.attr#transitionDrawableLength}
+          attribute's value can be found in the {@link #SmoothButton} array.
+
+
+          <p>Must be an integer value, such as "<code>100</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:transitionDrawableLength
+        */
+        public static final int SmoothButton_transitionDrawableLength = 1;
+        /**
+          <p>This symbol is the offset where the {@link cn.bubbycare.ibreast.R.attr#transitionTextColorDown}
+          attribute's value can be found in the {@link #SmoothButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:transitionTextColorDown
+        */
+        public static final int SmoothButton_transitionTextColorDown = 3;
+        /**
+          <p>This symbol is the offset where the {@link cn.bubbycare.ibreast.R.attr#transitionTextColorUp}
+          attribute's value can be found in the {@link #SmoothButton} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:transitionTextColorUp
+        */
+        public static final int SmoothButton_transitionTextColorUp = 2;
     };
 }
