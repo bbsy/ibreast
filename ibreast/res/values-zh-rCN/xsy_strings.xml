@@ -20,11 +20,7 @@
 
     <string name="app_name">咪咪秘密</string>
     <string name="action_settings">设置</string>
-    <string name="frament_first">首页</string>
-    <string name="frament_second">消息</string>
-    <string name="frament_thirst">好友</string>
-    <string name="frament_four">广场</string>
-    <string name="frament_five">更多</string> <!-- add by xushiyong 20150703 start -->
+ 
     <string name="string_register">注册</string>
     <string name="string_login">登录</string>
     <string name="string_back">返回</string>
@@ -41,6 +37,8 @@
     <string name="string_hard">较硬</string>
     <string name="string_hard_tile_size">肿块大小</string>
     <string name="string_input_pwd_confirm">请再次输入密码</string>
+    <string name="string_on">开启</string>
+    <string name="string_off">关闭</string>
     
     <!-- add by xushiyong 20150703 end -->
     
@@ -55,5 +53,6 @@
     <string name="sunday">周日</string>
     
     <string name="add">你可以在此添加你的布局</string>
+    <string name="string_tip">知道吗?每次月经结束后的3天,此时乳房的组织最为松软,容易发生异常.如果你是怀孕或已绝经的女性,可以每月的首日或固定每月的某一日自检</string>
 
 </resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appoinment_linear_head"
+    style="@style/head_linearlayout"
+    android:background="#F8F8F8" >
+
+    <ImageView
+        android:id="@+id/include_appoinment_iv_back"
+        style="@style/returnback"
+        android:contentDescription="@string/appointment_title" />
+
+    <TextView
+        android:id="@+id/include_appoinment_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/appointment_title"
+        android:textColor="#5F5D5F"
+        android:textSize="16sp" />
+    
+    <ImageButton 
+        android:id="@+id/include_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@drawable/icon_hard_small"
+        />
+
+</RelativeLayout>

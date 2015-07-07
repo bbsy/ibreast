@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -30,7 +31,7 @@ public class ChestActivity extends Activity implements IActivity, OnClickListene
     private ChestView chestView;
     private int size = 1;
     private int degree = 1;
-    
+    private ImageView ivBack;
     private TextView txtTitle;
     
     @Override
@@ -54,13 +55,14 @@ public class ChestActivity extends Activity implements IActivity, OnClickListene
         rbHard = (RadioButton)this.findViewById(R.id.view_rb_hard);
         seekBar = (SeekBar)this.findViewById(R.id.view_sb_selectnum);
         chestView = (ChestView)this.findViewById(R.id.view_chestview);
-        txtTitle = (TextView)this.findViewById(R.id.simple_titlebar_tv_title);
+        txtTitle = (TextView)this.findViewById(R.id.include_appoinment_tv_title);
+        ivBack = (ImageView)this.findViewById(R.id.include_appoinment_iv_back);
     }
 
     @Override
     public void initValue() {
         // TODO Auto-generated method stub
-        txtTitle.setText(getString(R.string.string_title_for_test));
+//        txtTitle.setText(getString(R.string.string_title_for_test));
     }
 
     @Override
@@ -70,6 +72,15 @@ public class ChestActivity extends Activity implements IActivity, OnClickListene
         imgBtnDelete.setOnClickListener(this);
         seekBar.setOnSeekBarChangeListener(this);
         radioGroup.setOnCheckedChangeListener(this);
+        ivBack.setOnClickListener(new OnClickListener()
+		{
+			@Override
+			public void onClick(View v)
+			{
+				// TODO Auto-generated method stub
+				finish();
+			}
+		});
     }
 
     @Override

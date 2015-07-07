@@ -9,16 +9,21 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
-import cn.bubbycare.ibreast.activity.ChestActivity;
 import cn.bubbycare.ibreast.activity.MainActivity;
-import cn.bubbycare.ibreast.fragment.FragmentPage1;
+import cn.bubbycare.ibreast.fragment.FragmentAppIndex;
 import cn.bubbycare.ibreast.fragment.FragmentPage2;
 import cn.bubbycare.ibreast.fragment.FragmentPage3;
 import cn.bubbycare.ibreast.fragment.FragmentPage4;
 import cn.bubbycare.ibreast.fragment.FragmentPage5;
+import cn.bubbycare.ibreast.fragment.Fragment_Appoinment;
+import cn.bubbycare.ibreast.fragment.Fragment_Disease;
+import cn.bubbycare.ibreast.fragment.Fragment_Inspection;
+import cn.bubbycare.ibreast.fragment.Fragment_Mine;
+import cn.bubbycare.ibreast.fragment.Fragment_apponiment_sure;
+import cn.bubbycare.ibreast.fragment.Fragment_disease_manager;
 
 /**
- * @author yangyu 功能描述：自定义TabHost
+ * 程序主框架 FragmentTab
  *youmeng 5594bcfb67e58e4031002ce3
  */
 public class MainTabActivity extends FragmentActivity {
@@ -27,10 +32,9 @@ public class MainTabActivity extends FragmentActivity {
     // 定义一个布局查找器
     private LayoutInflater layoutInflater;
     // 存放Fragment界面的数组
-    private Class fragmentArray[] = { FragmentPage1.class, FragmentPage2.class, FragmentPage3.class, FragmentPage4.class, FragmentPage5.class };
+    private Class fragmentArray[] = { FragmentAppIndex.class, Fragment_apponiment_sure.class, Fragment_Disease.class, Fragment_Mine.class};
     // 定义数组来存放按钮图片
-    private int mImageViewArray[] = { R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn, R.drawable.tab_square_btn,
-            R.drawable.tab_more_btn };
+    private int mImageViewArray[] = { R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn, R.drawable.tab_square_btn};
     // Tab选项卡的文字
     private String[] mTextviewArray;// = { getString(R.string.frament_first), getString(R.string.frament_second), getString(R.string.frament_thirst), getString(R.string.frament_four), getString(R.string.frament_five) };
 
@@ -39,8 +43,8 @@ public class MainTabActivity extends FragmentActivity {
         setContentView(R.layout.main_tab_layout);
         initValue();
         initView();
-        Intent intent = new Intent(this, ChestActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(this, MainActivity.class);
+//        startActivity(intent);
     }
     
 

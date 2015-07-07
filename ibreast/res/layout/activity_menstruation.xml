@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menstruation" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ccc" >
+
+        <ImageView
+            android:id="@+id/menstruation_backtrack"
+            style="@style/Basics_backtrack" />
+
+        <TextView
+            style="@style/Basics_text_tile"
+            android:text="@string/menstruation_title" />
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/menstruation_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/menstruation_early" />
+
+        <TextView
+            android:id="@+id/menstruation_tv_number"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+        <RelativeLayout
+        android:id="@+id/menstruation_relay2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/menstruation_situation" />
+
+        <TextView
+            android:id="@+id/Basics_tv_yes"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+        <RelativeLayout
+        android:id="@+id/menstruation_relay3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/menstruation_ovary" />
+
+        <TextView
+            android:id="@+id/Basics_tv_ovray"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+        <RelativeLayout
+        android:id="@+id/menstruation_relay4"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/menstruation_age" />
+
+        <TextView
+            android:id="@+id/menstruation_tv_age"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/menstruation_next"
+        style="@style/button_next"
+        android:text="@string/Basics_But_next" />
+    
+</LinearLayout>

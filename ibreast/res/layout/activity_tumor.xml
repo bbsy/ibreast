@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tumor" >
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ccc" >
+
+        <ImageView
+            android:id="@+id/Tumor_backtrack"
+            style="@style/Basics_backtrack" />
+
+        <TextView
+            style="@style/Basics_text_tile"
+            android:text="@string/tumor_title" />
+        
+        <TextView 
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tumor_submit"
+            />
+    </RelativeLayout>
+    
+	    <RelativeLayout
+        android:id="@+id/Basics_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/tumor_me" />
+
+        <TextView
+            android:id="@+id/Basics_tv_sex"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+        <RelativeLayout
+        android:id="@+id/Basics_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/tumor_cancer" />
+
+        <TextView
+            android:id="@+id/Basics_tv_sex"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+        <RelativeLayout
+        android:id="@+id/Basics_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/tumor_cancertow" />
+
+        <TextView
+            android:id="@+id/Basics_tv_sex"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+        <RelativeLayout
+        android:id="@+id/Basics_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/tumor_mother" />
+
+        <TextView
+            android:id="@+id/Basics_tv_sex"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+        <RelativeLayout
+        android:id="@+id/Basics_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/tumor_cancer" />
+
+        <TextView
+            android:id="@+id/Basics_tv_sex"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+	
+    <Button
+        android:id="@+id/Tumor_next"
+        style="@style/button_next"
+        android:text="@string/Basics_But_next" />
+    
+</LinearLayout>

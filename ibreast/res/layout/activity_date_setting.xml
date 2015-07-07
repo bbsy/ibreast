@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include 
+        layout="@layout/include_simple_titlebar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/icon_bg_for_dialog"
+        android:padding="8dp"
+        android:text="@string/string_tip"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:text="普通女性设置"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/activity_date_setting_item_last_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="left|center_vertical"
+            android:text="上次月经来潮日期"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right|center_vertical"
+            android:text="6月22日"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_date_setting_item_last_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="left|center_vertical"
+            android:text="上次月经结束日期"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right|center_vertical"
+            android:text="6月27日"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_date_setting_item_eveny_month_remind_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="left|center_vertical"
+            android:text="每月提醒日期"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right|center_vertical"
+            android:text="27日"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:padding="8dp"
+        android:text="怀孕或已绝经女性设置"
+        android:textColor="@android:color/black"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:id="@+id/activity_date_setting_item_other_women_setting_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:padding="8dp" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:gravity="left|center_vertical"
+            android:text="每月提醒日期"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="right|center_vertical"
+            android:text="23日"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:padding="8dp" 
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:text="是否提醒"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <cn.bubbycare.ibreast.view.MySwitch
+            android:id="@+id/pickup3"
+            style="@style/mySwitchStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            mySwitch:backgroundMask="@drawable/smask_background_copy"
+            mySwitch:leftBackground="@drawable/icon_bg_for_dialog"
+            mySwitch:pushStyle="true"
+            mySwitch:rightBackground="@drawable/icon_bg_for_dialog"
+            mySwitch:textOff="@string/string_off"
+            mySwitch:textOn="@string/string_on"
+            mySwitch:textOnThumb="false"
+            mySwitch:thumb="@drawable/stoggle_copy1"
+            mySwitch:thumbExtraMovement="16dp"
+            mySwitch:track="@drawable/sgroove_copy"
+            mySwitch:trackTextPadding="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>

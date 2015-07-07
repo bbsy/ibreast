@@ -12,6 +12,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import cn.bubbycare.ibreast.MainTabActivity;
 import cn.bubbycare.ibreast.R;
 import cn.bubbycare.ibreast.data.Constants;
 import cn.bubbycare.ibreast.interfaces.IActivity;
@@ -99,7 +100,8 @@ public class MainActivity extends BaseActivity implements IActivity, OnClickList
         // TODO Auto-generated method stub
         switch (v.getId()) {
         case R.id.activity_main_btn_login:
-
+        	Intent intent = new Intent(MainActivity.this, MainTabActivity.class);
+        	startActivity(intent);
             break;
         case R.id.activity_main_btn_register:
             register();

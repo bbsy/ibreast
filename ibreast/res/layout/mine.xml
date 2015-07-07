@@ -35,15 +35,6 @@
             android:gravity="center_horizontal" >
 
             <TextView
-                android:id="@+id/tv_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_above="@+id/tv_countdown"
-                android:layout_marginBottom="10dp"
-                android:text="@string/name" />
-
-            <TextView
                 android:id="@+id/tv_countdown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -53,6 +44,15 @@
                 android:textColor="#D9D9D9"
                 android:textSize="12sp" />
 
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_countdown"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="@string/name" />
+
         </RelativeLayout>
 
         <FrameLayout
@@ -61,10 +61,10 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true" >
 
-            <cn.buddycare.ibreast.mywidget.RoundImageView
+            <cn.bubbycare.ibreast.utils.RoundImageView
                 android:id="@+id/img_head"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:background="#00000000"
                 android:contentDescription="@string/app_name"

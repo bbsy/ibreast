@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hormone" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ccc" >
+
+        <ImageView
+            android:id="@+id/hormone_backtrack"
+            style="@style/Basics_backtrack" />
+
+        <TextView
+            style="@style/Basics_text_tile"
+            android:text="@string/hormone_title" />
+    </RelativeLayout>
+
+        <RelativeLayout
+        android:id="@+id/hormone_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/hormone_use" />
+
+        <TextView
+            android:id="@+id/hormone_tv_use"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+        <RelativeLayout
+        android:id="@+id/hormone_relay2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/hormone_combination" />
+
+        <TextView
+            android:id="@+id/hormone_tv_combination"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+        <RelativeLayout
+        android:id="@+id/hormone_relay3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            style="@style/Basics_text2"
+            android:text="@string/hormone_years" />
+
+        <TextView
+            android:id="@+id/hormone_tv_years"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+        <ImageView
+            style="@style/ImageView"
+            android:background="@drawable/right" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#ccc" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/Hormone_next"
+        style="@style/button_next"
+        android:text="@string/Basics_But_next" />
+    
+</LinearLayout>
