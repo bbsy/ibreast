@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="cn.bubbycare.ibreast.MainTabActivity"
+            android:name="cn.bubbycare.ibreast.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -53,10 +53,55 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="cn.bubbycare.ibreast.activity.DataSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.MainTabActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.RemindBySelfDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.mob.tools.MobUIShell"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Basics"
+            android:label="@string/title_activity_basics" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Pregnancy"
+            android:label="@string/title_activity_pregnancy" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Physical"
+            android:label="@string/title_activity_physical" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Race"
+            android:label="@string/title_activity_race" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Menstruation"
+            android:label="@string/title_activity_menstruation" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Hormone"
+            android:label="@string/title_activity_hormone" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Tumor"
+            android:label="@string/title_activity_tumor" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.HFFYC"
+            android:label="@string/title_activity_hffyc" >
+        </activity>
+        <!-- no detail info -->
     </application>
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
