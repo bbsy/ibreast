@@ -90,8 +90,37 @@ public class ChestView extends View implements OnTouchListener {
         if (bmpOvalHardBig == null)
             bmpOvalHardBig = BitmapFactory.decodeResource(getResources(), R.drawable.icon_hard_big);
     }
+    
+    
 
     @Override
+	protected void onDetachedFromWindow()
+	{
+		// TODO Auto-generated method stub
+		super.onDetachedFromWindow();
+	    if(bmpChest!=null)
+	    	bmpChest.recycle();
+	    if(bmpOvalSoftSmall!=null)
+	    	bmpOvalSoftSmall.recycle();
+	    if(bmpOvalSoftMiddle!=null)
+	    	bmpOvalSoftMiddle.recycle();
+	    if(bmpOvalSoftBig!=null)
+	    	bmpOvalSoftBig.recycle();
+	    if(bmpOvalMiddleSmall!=null)
+	    	bmpOvalMiddleSmall.recycle();
+	    if(bmpOvalMiddleMiddle!=null)
+	    	bmpOvalMiddleMiddle.recycle();
+	    if(bmpOvalMiddleBig!=null)
+	    	bmpOvalMiddleBig.recycle();
+	    if(bmpOvalHardSmall!=null)
+	    	bmpOvalHardSmall.recycle();
+	    if(bmpOvalHardMiddle!=null)
+	    	bmpOvalHardMiddle.recycle();
+	    if(bmpOvalHardBig!=null)
+	    	bmpOvalHardBig.recycle();
+	}
+
+	@Override
     protected void onDraw(Canvas canvas) {
         // TODO Auto-generated method stub
         super.onDraw(canvas);
@@ -114,7 +143,7 @@ public class ChestView extends View implements OnTouchListener {
     }
 
     public void addPoint() {
-        oval = bmpOvalSoftSmall;
+        oval = bmpOvalHardSmall;
         x = viewWidth / 2 - bmpOvalSoftSmall.getWidth() / 2;
         y = viewHeight / 2 - bmpOvalSoftSmall.getHeight() / 2;
         isDrawOval = true;

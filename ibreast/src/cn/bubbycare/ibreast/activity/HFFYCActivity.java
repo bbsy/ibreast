@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import cn.bubbycare.ibreast.R;
 
-public class HFFYC extends Activity {
+public class HFFYCActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

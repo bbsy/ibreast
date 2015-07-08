@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/appointment_title"
+            android:text="@string/inspection_com"
             android:textColor="#5F5D5F"
             android:textSize="16sp" />
     </RelativeLayout>

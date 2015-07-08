@@ -14,8 +14,9 @@ public class BaseActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
     }
 
-    private void addActionBar() {
-        // TODO Auto-generated method stub
+    @SuppressWarnings("unused")
+	private void addActionBar() 
+    {
         ActionBar actionBar = getActionBar();
 //        actionBar.set
     }

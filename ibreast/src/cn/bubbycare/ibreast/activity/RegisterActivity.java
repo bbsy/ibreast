@@ -8,6 +8,7 @@
 package cn.bubbycare.ibreast.activity;
 
 import java.util.Random;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -37,7 +38,8 @@ public class RegisterActivity extends Activity implements IActivity, OnClickList
         "http://diy.qqjay.com/u2/2013/0401/4355c29b30d295b26da6f242a65bcaad.jpg"
     };
     CustomTitleBar titleBar ;
-    private boolean ready;
+    @SuppressWarnings("unused")
+	private boolean ready;
     private Button btnGetVerNum;
     
     @Override
@@ -66,7 +68,8 @@ public class RegisterActivity extends Activity implements IActivity, OnClickList
     
     
     // 提交用户信息
-    private void registerUser(String country, String phone) {
+    @SuppressWarnings("unused")
+	private void registerUser(String country, String phone) {
         Random rnd = new Random();
         int id = Math.abs(rnd.nextInt());
         String uid = String.valueOf(id);

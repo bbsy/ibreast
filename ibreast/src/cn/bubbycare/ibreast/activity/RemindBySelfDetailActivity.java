@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Description : 自检的图文显示Activity Create time : 2015-7-7 下午10:06:28 Project name:
@@ -27,7 +28,7 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 {
 	ImageView ivBack;
 	ImageButton btnRight;
-
+	TextView txtTitle;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -48,6 +49,7 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 		ivBack = (ImageView) this.findViewById(R.id.include_appoinment_iv_back);
 		btnRight = (ImageButton) this.findViewById(R.id.include_right_button);
 		btnRight.setVisibility(View.VISIBLE);
+		txtTitle = (TextView)this.findViewById(R.id.include_appoinment_tv_title);
 	}
 
 
@@ -55,7 +57,7 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 	public void initValue()
 	{
 		// TODO Auto-generated method stub
-
+		txtTitle.setText(R.string.string_selfremind);
 	}
 
 

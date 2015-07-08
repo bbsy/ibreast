@@ -9,30 +9,32 @@ import android.widget.Button;
 import android.widget.ImageView;
 import cn.bubbycare.ibreast.R;
 
-public class Tumor extends Activity implements OnClickListener {
+public class RaceActivity extends Activity implements OnClickListener {
 
 	Button bt;
 	ImageView iv;
 	
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_tumor);
+		setContentView(R.layout.activity_race);
 		init();
 	}
 
 	void init() {
-		bt = (Button) this.findViewById(R.id.Tumor_next);
-		iv = (ImageView) this.findViewById(R.id.Tumor_backtrack);
+		bt = (Button) this.findViewById(R.id.Race_next);
+		iv = (ImageView) this.findViewById(R.id.Race_backtrack);
+		bt.setOnClickListener(this);
+		iv.setOnClickListener(this);
 	}
 
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.Tumor_backtrack:
+		case R.id.Race_backtrack:
 			finish();
 			break;
-		case R.id.Tumor_next:
-			Intent it = new Intent(this,HFFYC.class);
+		case R.id.Race_next:
+			Intent it = new Intent(this,MenstruationActivity.class);
 			startActivity(it);
 			break;
 		default:

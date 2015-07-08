@@ -2,7 +2,9 @@ package cn.bubbycare.ibreast.activity;
 
 import java.util.HashMap;
 import java.util.Random;
+
 import org.json.JSONObject;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,9 +19,11 @@ import cn.bubbycare.ibreast.R;
 import cn.bubbycare.ibreast.data.Constants;
 import cn.bubbycare.ibreast.interfaces.IActivity;
 import cn.bubbycare.ibreast.utils.AccessTokenKeeper;
+import cn.bubbycare.ibreast.utils.ActivityUtil;
 import cn.smssdk.EventHandler;
 import cn.smssdk.SMSSDK;
 import cn.smssdk.gui.RegisterPage;
+
 import com.sina.weibo.sdk.auth.Oauth2AccessToken;
 import com.sina.weibo.sdk.auth.WeiboAuth;
 import com.sina.weibo.sdk.auth.WeiboAuthListener;
@@ -50,6 +54,7 @@ public class MainActivity extends BaseActivity implements IActivity, OnClickList
     ImageButton imgBtnQQ;
     ImageButton imgBtnWB;
 	public static QQAuth mQQAuth;
+	@SuppressWarnings("unused")
 	private UserInfo mInfo;
 	private Tencent mTencent;
 	private final String APP_ID = "222222";// 测试时使用，真正发布的时候要换成自己的APP_ID
@@ -100,8 +105,7 @@ public class MainActivity extends BaseActivity implements IActivity, OnClickList
         // TODO Auto-generated method stub
         switch (v.getId()) {
         case R.id.activity_main_btn_login:
-        	Intent intent = new Intent(MainActivity.this, MainTabActivity.class);
-        	startActivity(intent);
+        	ActivityUtil.goToNewActivity(this, MainTabActivity.class);
             break;
         case R.id.activity_main_btn_register:
             register();

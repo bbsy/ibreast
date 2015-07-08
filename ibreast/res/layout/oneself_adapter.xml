@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/Basics_relay1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" >
+
+        <TextView
+            android:id="@+id/match_list_cancer"
+            style="@style/Basics_text2"
+            android:text="@string/Basics_tv_sex" />
+
+        <TextView
+            android:id="@+id/match_list_age"
+            style="@style/Basics_text3"
+            android:text="点击输入数据" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

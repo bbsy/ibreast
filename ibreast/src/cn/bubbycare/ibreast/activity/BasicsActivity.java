@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import cn.bubbycare.ibreast.R;
 
-public class Basics extends Activity implements OnClickListener {
+public class BasicsActivity extends Activity implements OnClickListener {
 
 	Button bt;
 	ImageView iv;
@@ -23,6 +23,8 @@ public class Basics extends Activity implements OnClickListener {
 	void init() {
 		bt = (Button) this.findViewById(R.id.Basics_next);
 		iv = (ImageView) this.findViewById(R.id.basics_backtrack);
+		bt.setOnClickListener(this);
+		iv.setOnClickListener(this);
 	}
 
 	@Override
@@ -32,7 +34,7 @@ public class Basics extends Activity implements OnClickListener {
 			finish();
 			break;
 		case R.id.Basics_next:
-			Intent it = new Intent(this,Pregnancy.class);
+			Intent it = new Intent(this,PregnancyActivity.class);
 			startActivity(it);
 			break;
 		default:

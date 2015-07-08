@@ -1,6 +1,8 @@
 package cn.bubbycare.ibreast.fragment;
 
 import cn.bubbycare.ibreast.R;
+import cn.bubbycare.ibreast.activity.AppoinActivity;
+import cn.bubbycare.ibreast.activity.CaseActivity;
 import cn.bubbycare.ibreast.utils.ActivityUtil;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -38,7 +40,7 @@ public class Fragment_Mine extends Fragment
 			public void onClick(View v)
 			{
 				// add by xushiyong 20150708 for go to new Activity
-				//ActivityUtil.goToNewActivity(getActivity(), targeClass);
+				ActivityUtil.goToNewActivity(getActivity(), AppoinActivity.class);
 			}
 		});
 		rela_manager.setOnClickListener(new OnClickListener()
@@ -46,7 +48,7 @@ public class Fragment_Mine extends Fragment
 			public void onClick(View v)
 			{
 				// add by xushiyong 20150708 for go to new Activity
-				//ActivityUtil.goToNewActivity(getActivity(), targeClass);
+				ActivityUtil.goToNewActivity(getActivity(), CaseActivity.class);
 			}
 		});
 	}

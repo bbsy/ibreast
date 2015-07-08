@@ -62,7 +62,7 @@ public class ChestActivity extends Activity implements IActivity, OnClickListene
     @Override
     public void initValue() {
         // TODO Auto-generated method stub
-//        txtTitle.setText(getString(R.string.string_title_for_test));
+        txtTitle.setText(getString(R.string.string_selfremind_record));
     }
 
     @Override

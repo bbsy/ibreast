@@ -9,8 +9,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
+import cn.bubbycare.ibreast.activity.DataSettingActivity;
 import cn.bubbycare.ibreast.activity.MainActivity;
 import cn.bubbycare.ibreast.fragment.FragmentAppIndex;
+import cn.bubbycare.ibreast.fragment.FragmentDiseaseKnow;
 import cn.bubbycare.ibreast.fragment.FragmentPage2;
 import cn.bubbycare.ibreast.fragment.FragmentPage3;
 import cn.bubbycare.ibreast.fragment.FragmentPage4;
@@ -32,7 +34,7 @@ public class MainTabActivity extends FragmentActivity {
     // 定义一个布局查找器
     private LayoutInflater layoutInflater;
     // 存放Fragment界面的数组
-    private Class fragmentArray[] = { FragmentAppIndex.class, Fragment_apponiment_sure.class, Fragment_Disease.class, Fragment_Mine.class};
+    private Class fragmentArray[] = { FragmentAppIndex.class, DataSettingActivity.class, FragmentDiseaseKnow.class, Fragment_Mine.class};
     // 定义数组来存放按钮图片
     private int mImageViewArray[] = { R.drawable.tab_home_btn, R.drawable.tab_message_btn, R.drawable.tab_selfinfo_btn, R.drawable.tab_square_btn};
     // Tab选项卡的文字

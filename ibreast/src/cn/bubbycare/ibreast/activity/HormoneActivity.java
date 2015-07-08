@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import cn.bubbycare.ibreast.R;
 
-public class Hormone extends Activity implements OnClickListener {
+public class HormoneActivity extends Activity implements OnClickListener {
 
 	Button bt;
 	ImageView iv;
@@ -23,6 +23,8 @@ public class Hormone extends Activity implements OnClickListener {
 		void init() {
 			bt = (Button) this.findViewById(R.id.Hormone_next);
 			iv = (ImageView) this.findViewById(R.id.hormone_backtrack);
+			bt.setOnClickListener(this);
+			iv.setOnClickListener(this);
 		}
 
 		@Override
@@ -32,7 +34,7 @@ public class Hormone extends Activity implements OnClickListener {
 				finish();
 				break;
 			case R.id.Hormone_next:
-				Intent it = new Intent(this,Tumor.class);
+				Intent it = new Intent(this,TumorActivity.class);
 				startActivity(it);
 				break;
 			default:
