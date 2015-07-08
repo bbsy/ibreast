@@ -2,9 +2,7 @@ package cn.bubbycare.ibreast.activity;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -16,7 +14,7 @@ import cn.bubbycare.ibreast.adapter.Appoinment_adapter;
 import cn.bubbycare.ibreast.bean.HospitalBean;
 import cn.bubbycare.ibreast.utils.ActivityUtil;
 
-public class AppoinActivity extends Activity implements OnItemClickListener
+public class AppoinActivity extends Activity// implements OnItemClickListener
 {
 	private ListView lv_appoinment;
 
@@ -37,7 +35,7 @@ public class AppoinActivity extends Activity implements OnItemClickListener
 
 	private void initView() {
 		lv_appoinment = (ListView)findViewById(R.id.appoinment_lv);
-		lv_appoinment.setOnItemClickListener(this);
+
 		list = new ArrayList<HospitalBean>();
 		for (int i = 0; i < 3; i++) {
 			bean = new HospitalBean();
@@ -49,10 +47,13 @@ public class AppoinActivity extends Activity implements OnItemClickListener
 		lv_appoinment.setAdapter(adapter);
 	}
 
-	@Override
-	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3)
-	{
-		// TODO Auto-generated method stub
-		ActivityUtil.goToNewActivity(this, Appoin2Activity.class);
-	}
+//	@Override
+//	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3)
+//	{
+//		// TODO Auto-generated method stub
+//		
+//		
+//	}
+	
+	
 }
