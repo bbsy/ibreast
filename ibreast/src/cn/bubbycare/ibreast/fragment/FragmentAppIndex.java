@@ -14,6 +14,7 @@ import android.widget.Button;
 import cn.bubbycare.ibreast.R;
 import cn.bubbycare.ibreast.activity.BasicsActivity;
 import cn.bubbycare.ibreast.activity.InspecActivity;
+import cn.bubbycare.ibreast.activity.ProfessionalInspection;
 import cn.bubbycare.ibreast.activity.RemindBySelfDetailActivity;
 import cn.bubbycare.ibreast.utils.ActivityUtil;
 
@@ -52,7 +53,7 @@ public class FragmentAppIndex extends Fragment implements OnClickListener{
 			break;
 		case R.id.fragment1_bt_mmzj:
 			but2.setTextColor(R.color.white);
-			ActivityUtil.goToNewActivity(getActivity(), RemindBySelfDetailActivity.class);
+			ActivityUtil.goToNewActivity(getActivity(), ProfessionalInspection.class);
 			break;
 		case R.id.fragment1_bt_zyjc:
 			but3.setTextColor(R.color.white);

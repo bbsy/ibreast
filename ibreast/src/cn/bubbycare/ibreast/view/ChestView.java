@@ -13,6 +13,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
@@ -126,9 +127,7 @@ public class ChestView extends View implements OnTouchListener {
         super.onDraw(canvas);
         viewHeight = getHeight();
         viewWidth = getWidth();
-//        canvas.drawColor(Color.RED);
 
-//        canvas.drawColor(R.color.pick);
         canvas.drawBitmap(bmpChest, viewWidth / 2 - bmpChest.getWidth() / 2, viewHeight / 2 - bmpChest.getHeight() / 2, paint);
         if (isDrawOval) {
             canvas.drawBitmap(oval, x, y, paint);
@@ -138,7 +137,15 @@ public class ChestView extends View implements OnTouchListener {
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         // TODO Auto-generated method stub
-
+        if(isDrawOval)
+        {
+            if(event.getAction() == MotionEvent.ACTION_MOVE)
+            {
+                x = (int) event.getX();
+                y = (int) event.getY();
+                invalidate();
+            }
+        }
         return true;
     }
 
@@ -163,8 +170,34 @@ public class ChestView extends View implements OnTouchListener {
         this.y = y;
         invalidate();
     }
+    
+    /**返回肿块的X坐标*/
+    public int getPointX()
+    {
+        return x;
+    }
+    
+    /**返回肿块的Y坐标*/
+    public int getPointY()
+    {
+        return y;
+    }
+
+    /**设置肿块的X坐标*/
+    public void setPointX(int x)
+    {
+        this.x = x;
+    }
+    
+    /**设置肿块的Y坐标*/
+    public void setPointY(int y)
+    {
+        this.y = y;
+    }
 
     public void changePointSizeOrDegree(int degree, int size) {
+        isDrawOval = true;
+        Log.i("XU", "init Value------------changePointSizeOrDegree");
         if (degree == 1) {
             if (size == 1)
                 oval = bmpOvalSoftSmall;

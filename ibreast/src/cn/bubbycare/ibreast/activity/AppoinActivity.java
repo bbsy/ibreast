@@ -2,19 +2,20 @@ package cn.bubbycare.ibreast.activity;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 import cn.bubbycare.ibreast.R;
 import cn.bubbycare.ibreast.adapter.Appoinment_adapter;
 import cn.bubbycare.ibreast.bean.HospitalBean;
-import cn.bubbycare.ibreast.utils.ActivityUtil;
 
-public class AppoinActivity extends Activity// implements OnItemClickListener
+public class AppoinActivity extends Activity
 {
 	private ListView lv_appoinment;
 
@@ -22,6 +23,8 @@ public class AppoinActivity extends Activity// implements OnItemClickListener
 
 	private HospitalBean bean;
 
+	private ImageView iv_back;
+	
 	private List<HospitalBean> list;
 
 	@Override
@@ -34,6 +37,12 @@ public class AppoinActivity extends Activity// implements OnItemClickListener
 	}
 
 	private void initView() {
+		iv_back = (ImageView)findViewById(R.id.appoinment_iv_back);
+		iv_back.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				finish();
+			}
+		});
 		lv_appoinment = (ListView)findViewById(R.id.appoinment_lv);
 
 		list = new ArrayList<HospitalBean>();

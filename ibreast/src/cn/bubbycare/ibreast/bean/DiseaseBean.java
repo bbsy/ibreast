@@ -2,6 +2,10 @@ package cn.bubbycare.ibreast.bean;
 
 import android.graphics.Bitmap;
 
+
+/**
+ * 病例管理 bean
+ * */
 public class DiseaseBean {
 
 	private String sort;
@@ -12,7 +16,6 @@ public class DiseaseBean {
 	private String result;
 	private String advice;
 
-	
 	public String getAdvice() {
 		return advice;
 	}

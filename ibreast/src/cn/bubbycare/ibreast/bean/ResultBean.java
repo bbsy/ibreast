@@ -1,6 +1,11 @@
 package cn.bubbycare.ibreast.bean;
 
-public class ResultBean {
+
+/**
+ * 专业检查医生bean
+ * */
+public class ResultBean 
+{
 	private String data;
 
 	private String category;

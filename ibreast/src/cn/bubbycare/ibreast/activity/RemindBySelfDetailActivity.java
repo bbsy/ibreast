@@ -30,7 +30,6 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 	ImageButton btnRight;
 	TextView txtTitle;
 
-	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		// TODO Auto-generated method stub
@@ -41,11 +40,8 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 		initEvent();
 	}
 
-
-	@Override
 	public void initView()
 	{
-		// TODO Auto-generated method stub
 		ivBack = (ImageView) this.findViewById(R.id.include_appoinment_iv_back);
 		btnRight = (ImageButton) this.findViewById(R.id.include_right_button);
 		btnRight.setVisibility(View.VISIBLE);
@@ -53,7 +49,6 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 	}
 
 
-	@Override
 	public void initValue()
 	{
 		// TODO Auto-generated method stub
@@ -61,14 +56,11 @@ public class RemindBySelfDetailActivity extends Activity implements IActivity
 	}
 
 
-	@Override
 	public void initEvent()
 	{
 		// TODO Auto-generated method stub
 		ivBack.setOnClickListener(new OnClickListener()
 		{
-
-			@Override
 			public void onClick(View v)
 			{
 				// TODO Auto-generated method stub

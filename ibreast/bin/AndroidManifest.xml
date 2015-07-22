@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="cn.bubbycare.ibreast.MainTabActivity"
+            android:name="cn.bubbycare.ibreast.activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,10 +41,6 @@
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
-            android:name="cn.bubbycare.ibreast.activity.MainActivity"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
             android:name="cn.bubbycare.ibreast.activity.RegisterActivity"
             android:screenOrientation="portrait" >
         </activity>
@@ -53,10 +49,88 @@
             android:screenOrientation="portrait" >
         </activity>
         <activity
+            android:name="cn.bubbycare.ibreast.activity.DataSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.ProfessionalInspection"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.MainTabActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.RemindBySelfDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
             android:name="com.mob.tools.MobUIShell"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:theme="@android:style/Theme.NoTitleBar"
             android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.BasicsActivity"
+            android:label="@string/title_activity_basics" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.PregnancyActivity"
+            android:label="@string/title_activity_pregnancy" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.PhysicalActivity"
+            android:label="@string/title_activity_physical" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.RaceActivity"
+            android:label="@string/title_activity_race" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.MenstruationActivity"
+            android:label="@string/title_activity_menstruation" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.HormoneActivity"
+            android:label="@string/title_activity_hormone" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.TumorActivity"
+            android:label="@string/title_activity_tumor" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.HFFYCActivity"
+            android:label="@string/title_activity_hffyc" >
+        </activity>
+        <!-- no detail info -->
+
+
+        <!-- add from tangyaorong 20150708 start -->
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.Appoin2Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.AppoinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.CaseActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.InspecActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.MineActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.bubbycare.ibreast.activity.MyAppoinActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- add from tangyaorong 20150708 end -->
     </application>
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />

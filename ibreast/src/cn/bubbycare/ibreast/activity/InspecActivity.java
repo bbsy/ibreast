@@ -12,23 +12,30 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 import cn.bubbycare.ibreast.R;
 import cn.bubbycare.ibreast.adapter.Inspection_adapter;
 import cn.bubbycare.ibreast.bean.ResultBean;
 
 /**
- * 专业检查
+ * 咪咪自检
  * */
 public class InspecActivity extends Activity {
 	private ListView lv_result;
 
 	private Inspection_adapter adapter;
 
+	private ImageView iv_back;
+
 	private View view;
-	
+
+	private TextView tv_title;
 	private Button btn_inspect;
-	
+	// 设置检查日期
+	private Button btn_setCheckData;
+
 	private List<ResultBean> list;
 
 	@Override
@@ -40,22 +47,39 @@ public class InspecActivity extends Activity {
 		initView();
 	}
 
-	private void initView() 
-	{
-		btn_inspect = (Button)findViewById(R.id.inspection_btn_com);
+	private void initView() {
+		
+		tv_title = (TextView) findViewById(R.id.inspection_tv_title);
+		tv_title.setText("咪咪自检");
+		btn_setCheckData = (Button) findViewById(R.id.inspection_btn_set_data);
+		btn_setCheckData.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent intent = new Intent(InspecActivity.this,
+						DataSettingActivity.class);
+				startActivity(intent);
+			}
+		});
+		iv_back = (ImageView) findViewById(R.id.inspection_iv_back);
+		iv_back.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				finish();
+			}
+		});
+
+		btn_inspect = (Button) findViewById(R.id.inspection_btn_com);
 		btn_inspect.setOnClickListener(new OnClickListener() {
-			
+
 			@Override
-			public void onClick(View v)
-			{
-				Intent intent = new Intent(InspecActivity.this,AppoinActivity.class);
+			public void onClick(View v) {
+				Intent intent = new Intent(InspecActivity.this,
+						AppoinActivity.class);
 				startActivity(intent);
 			}
 		});
 		lv_result = (ListView) findViewById(R.id.inspection_lv);
 		// 虚拟数据
 		list = new ArrayList<ResultBean>();
-		for (int i = 0; i < 2; i++) {
+		for (int i = 0; i < 5; i++) {
 			ResultBean bean = new ResultBean();
 			bean.setData("2015/6/30");
 			bean.setCategory("医生/X射线/B超");

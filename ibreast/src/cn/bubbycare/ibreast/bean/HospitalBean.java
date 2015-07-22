@@ -2,6 +2,9 @@ package cn.bubbycare.ibreast.bean;
 
 import android.graphics.Bitmap;
 
+/**
+ * 我的预约 我要预约的医院 bean
+ * */
 public class HospitalBean {
 
 	private String hospitalName;

@@ -71,6 +71,7 @@
             android:layout_margin="25dp"
             android:background="@drawable/inspection_btn"
             android:padding="13dp"
+            android:visibility="gone"
             android:text="@string/inspection_data"
             android:textColor="#5A595A"
             android:textSize="17sp" />
