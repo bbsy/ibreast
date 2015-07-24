@@ -47,7 +47,7 @@ public class ProfessionalInspection extends Activity {
 		btnBeginCheck.setOnClickListener(new OnClickListener() {
 			public void onClick(View v)
 			{
-				Intent intent = new Intent(ProfessionalInspection.this,RemindBySelfDetailActivity.class);
+				Intent intent = new Intent(ProfessionalInspection.this,AppoinActivity.class);
 				startActivity(intent);
 			}
 		});

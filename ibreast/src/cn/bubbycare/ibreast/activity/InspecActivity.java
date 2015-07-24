@@ -69,7 +69,7 @@ public class InspecActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(InspecActivity.this,
-						AppoinActivity.class);
+						RemindBySelfDetailActivity.class);
 				startActivity(intent);
 			}
 		});
@@ -83,8 +83,8 @@ public class InspecActivity extends Activity {
 			bean.setResult("检查结果");
 			list.add(bean);
 		}
-		adapter = new Inspection_adapter(this, list);
-//		lv_result.setDividerHeight(0);
+		adapter = new Inspection_adapter(InspecActivity.this, list);
+		lv_result.setDividerHeight(0);
 		lv_result.setAdapter(adapter);
 
 	}
