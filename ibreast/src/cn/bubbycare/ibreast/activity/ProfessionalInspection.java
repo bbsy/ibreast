@@ -27,6 +27,7 @@ public class ProfessionalInspection extends Activity {
 	private View view;
 	private TextView tv_title;
 	private ImageView btn_add_data;
+	private ImageView btn_back;
 	private Button btnBeginCheck;
 	private List<ResultBean> list;
 
@@ -41,7 +42,11 @@ public class ProfessionalInspection extends Activity {
 	private void initView() 
 	{
 		tv_title = (TextView)findViewById(R.id.inspection_tv_title);
+		
 		btn_add_data = (ImageView)findViewById(R.id.insperction_add_history_records);
+		
+		btn_back = (ImageView)findViewById(R.id.inspection_iv_back);
+		
 		lv_result = (ListView) findViewById(R.id.inspection_lv);
 		btnBeginCheck = (Button)findViewById(R.id.professional_inspection_btn_com);
 		btnBeginCheck.setOnClickListener(new OnClickListener() {
@@ -49,6 +54,14 @@ public class ProfessionalInspection extends Activity {
 			{
 				Intent intent = new Intent(ProfessionalInspection.this,AppoinActivity.class);
 				startActivity(intent);
+			}
+		});
+		
+		btn_back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				finish();
 			}
 		});
 		
