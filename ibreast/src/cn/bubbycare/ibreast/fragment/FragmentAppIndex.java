@@ -53,11 +53,11 @@ public class FragmentAppIndex extends Fragment implements OnClickListener{
 			break;
 		case R.id.fragment1_bt_mmzj:
 			but2.setTextColor(R.color.white);
-			ActivityUtil.goToNewActivity(getActivity(), ProfessionalInspection.class);
+			ActivityUtil.goToNewActivity(getActivity(), InspecActivity.class);
 			break;
 		case R.id.fragment1_bt_zyjc:
 			but3.setTextColor(R.color.white);
-			ActivityUtil.goToNewActivity(getActivity(), InspecActivity.class);
+			ActivityUtil.goToNewActivity(getActivity(), ProfessionalInspection.class);
 			break;
 		}
 	}

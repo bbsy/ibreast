@@ -31,7 +31,6 @@ public class InspecActivity extends Activity {
 
 	private View view;
 
-	private TextView tv_title;
 	private Button btn_inspect;
 	// 设置检查日期
 	private Button btn_setCheckData;
@@ -43,14 +42,12 @@ public class InspecActivity extends Activity {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
-		setContentView(R.layout.fragment_professional_inspection);
+		setContentView(R.layout.activity_checked_self);
 		initView();
 	}
 
 	private void initView() {
 		
-		tv_title = (TextView) findViewById(R.id.inspection_tv_title);
-		tv_title.setText("咪咪自检");
 		btn_setCheckData = (Button) findViewById(R.id.inspection_btn_set_data);
 		btn_setCheckData.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
@@ -59,7 +56,7 @@ public class InspecActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		iv_back = (ImageView) findViewById(R.id.inspection_iv_back);
+		iv_back = (ImageView) findViewById(R.id.check_self_iv_back);
 		iv_back.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				finish();
@@ -76,7 +73,7 @@ public class InspecActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-		lv_result = (ListView) findViewById(R.id.inspection_lv);
+		lv_result = (ListView) findViewById(R.id.professional_inspection_lv);
 		// 虚拟数据
 		list = new ArrayList<ResultBean>();
 		for (int i = 0; i < 5; i++) {
@@ -87,7 +84,7 @@ public class InspecActivity extends Activity {
 			list.add(bean);
 		}
 		adapter = new Inspection_adapter(this, list);
-		lv_result.setDividerHeight(0);
+//		lv_result.setDividerHeight(0);
 		lv_result.setAdapter(adapter);
 
 	}

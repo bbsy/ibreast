@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import cn.bubbycare.ibreast.R;
@@ -25,7 +26,7 @@ public class ProfessionalInspection extends Activity {
 
 	private View view;
 	private TextView tv_title;
-	private TextView btn_add_data;
+	private ImageView btn_add_data;
 	private Button btnBeginCheck;
 	private List<ResultBean> list;
 
@@ -33,18 +34,16 @@ public class ProfessionalInspection extends Activity {
 	public void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.fragment_professional_inspection);
+		setContentView(R.layout.activity_professional_inspection);
 		initView();
 	}
 
 	private void initView() 
 	{
 		tv_title = (TextView)findViewById(R.id.inspection_tv_title);
-		btn_add_data = (TextView)findViewById(R.id.inspection_btn_add_data);
-		btn_add_data.setText("检查历史记录");
-		tv_title.setText("专业检查");
+		btn_add_data = (ImageView)findViewById(R.id.insperction_add_history_records);
 		lv_result = (ListView) findViewById(R.id.inspection_lv);
-		btnBeginCheck = (Button)findViewById(R.id.inspection_btn_com);
+		btnBeginCheck = (Button)findViewById(R.id.professional_inspection_btn_com);
 		btnBeginCheck.setOnClickListener(new OnClickListener() {
 			public void onClick(View v)
 			{
