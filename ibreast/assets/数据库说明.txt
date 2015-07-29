@@ -1,0 +1,6 @@
+数据库名 point
+表名 	 point
+
+字段  size(尺寸大小)  degree（程度）  x( 坐标)  y(坐标)   state (状态)    
+
+类型统一为 TEXT类型
