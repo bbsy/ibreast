@@ -4,19 +4,19 @@
  */
 package cn.bubbycare.ibreast.view;
 
-import cn.bubbycare.ibreast.R;
-import android.R.integer;
 import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
+import cn.bubbycare.ibreast.R;
+import cn.bubbycare.ibreast.utils.AssetsDatabaseManager;
 
 /**
  * Description : 胸部管理视图 Create time : 2015-7-5 下午11:03:19 Project name: ibreast
@@ -58,6 +58,7 @@ public class ChestView extends View implements OnTouchListener {
     private boolean isDrawOval = false;
     private int x, y;
     private Bitmap oval;
+    private SQLiteDatabase db;
 
     public ChestView(Context context, AttributeSet attrs) {
         super(context, attrs);
@@ -65,7 +66,19 @@ public class ChestView extends View implements OnTouchListener {
         this.context = context;
         this.setOnTouchListener(this);
         paint = new Paint();
+        initDB();
         initBmps();
+    }
+
+    private void initDB() {
+        // TODO Auto-generated method stub
+        // 初始化，只需要调用一次
+        AssetsDatabaseManager.initManager(getContext());
+        // 获取管理对象，因为数据库需要通过管理对象才能够获取
+        AssetsDatabaseManager mg = AssetsDatabaseManager.getManager();
+        // 通过管理对象获取数据库
+        if(db == null)
+            db = mg.getDatabase("city.db");
     }
 
     private void initBmps() {
@@ -92,8 +105,6 @@ public class ChestView extends View implements OnTouchListener {
             bmpOvalHardBig = BitmapFactory.decodeResource(getResources(), R.drawable.icon_hard_big);
     }
     
-    
-
     @Override
 	protected void onDetachedFromWindow()
 	{
@@ -127,7 +138,6 @@ public class ChestView extends View implements OnTouchListener {
         super.onDraw(canvas);
         viewHeight = getHeight();
         viewWidth = getWidth();
-
         canvas.drawBitmap(bmpChest, viewWidth / 2 - bmpChest.getWidth() / 2, viewHeight / 2 - bmpChest.getHeight() / 2, paint);
         if (isDrawOval) {
             canvas.drawBitmap(oval, x, y, paint);
