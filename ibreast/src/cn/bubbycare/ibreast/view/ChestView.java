@@ -35,7 +35,6 @@ public class ChestView extends View implements OnTouchListener {
 //    public static final int DEGREE_MIDDLE = 2;
 //    public static final int DEGREE_HARD   = 3;
 
-    
     private Context context;
     private int radius; // 硬块半径
     private int degree;// 硬块程度 1|软 2|中等 3|硬
